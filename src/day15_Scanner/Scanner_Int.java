@@ -13,7 +13,8 @@ public class Scanner_Int {
 
         System.out.println("Enter number one:");
         int numOne = scanner.nextInt(); // reading an int number
-
+        // int numOne = 9000; -> Hard coding/ fixed value,
+        // but with Scanner it can dynamic
         System.out.println("Enter number two:");
         int numTwo = scanner.nextInt(); // reading an int number
 
