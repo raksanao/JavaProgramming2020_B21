@@ -32,6 +32,8 @@ public class EmployeeInfo {
             salary = input.nextDouble();
         }
 
+        input.close();
+
         System.out.println("Full name: " + firstName + " " + lastName);
         System.out.println("Employed: " + isEmployed);
         System.out.println("Salary " + salary);
