@@ -34,7 +34,7 @@ public class Scanner_Review {
 
             if(areMatching) {
                 System.out.println("Number: " + num);
-                System.out.println("Word " + word);
+                System.out.println("Word: " + word);
             } else {
                 System.out.println("The two inputs do not match");
             }
@@ -43,6 +43,8 @@ public class Scanner_Review {
         } else {
             System.out.println(num + " was not between 1 - 10");
         }
+
+        input.close();
 
 
     }
