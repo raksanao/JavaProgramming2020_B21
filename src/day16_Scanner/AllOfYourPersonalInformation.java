@@ -19,9 +19,8 @@ Task:
 
 	Ask the user their favorite animal?
 	Ask the user how many pets they want?
-	Ask SSN?
 
-	Print everything and points
+	Print everything
 
  */
 
