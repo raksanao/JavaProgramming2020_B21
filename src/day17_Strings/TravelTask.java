@@ -20,7 +20,6 @@ public class TravelTask {
             Print: "Your ticket is booked to $countryName. We have charged extra for the $numberOfBags bags but you are traveling with $peopleYouTravelWith so we are giving a discount. Your total cost is $costAmount"
 
 
-
         > if the user enters false:
             The base cost of the passport renewal is: 200
             Ask the user when their passport expired(int)
@@ -68,16 +67,27 @@ public class TravelTask {
 
 
         } else {
+            cost = 200;
 
-            // Work on it for practice, I will will share the solution
+            System.out.println("When did your passport expire");
+            int expiredYears = input.nextInt();
+            cost += (2020 - expiredYears) * 75;
 
+            System.out.println("Which countries do you want to travel to");
+            input.nextLine();  // accept the enter input
+            String countries = input.nextLine();
 
-        }
+            System.out.println("Will you be traveling in the next year");
+            String areTraveling = input.next();
+            if(areTraveling.equalsIgnoreCase("yes")) {
+                cost += 100;
+            } else {
+                cost -= 50;
+            }
 
+            System.out.println("Looks like your password has been expired for " + expiredYears + ", but not to worry we will get it ready for you to travel to " + countries + ". Your total cost has come out to" + cost);
 
-
+        }  // end of else block
 
     }
-
-
 }
