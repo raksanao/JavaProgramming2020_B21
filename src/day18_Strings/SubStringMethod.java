@@ -43,7 +43,16 @@ public class SubStringMethod {
 
 
         System.out.println("============================================");
+    /*
+    ask the user to enter first and last names, then print out the full name
+            input:
+                cYbErTeK
+                sCHOOL
 
+            output:
+                Cybertek School
+
+     */
 
 
 
