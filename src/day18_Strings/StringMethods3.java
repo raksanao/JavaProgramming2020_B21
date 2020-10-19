@@ -50,6 +50,44 @@ public class StringMethods3 {
 
         //"Yesterday was Sunday, Today is Monday, Tomorrow is gonna be Tuesday";
 
+            a = a.replaceFirst("Monday", "Sunday");
+            a = a.replaceFirst("be Monday", "be Tuesday");
+
+        System.out.println(a);
+
+        System.out.println("================================================");
+
+        String emailAddress = "Cybertek.School@yahoo.com";
+
+        int beginningIndex = emailAddress.indexOf("@")+1 ;
+        int endingIndex = emailAddress.indexOf(".com");
+
+        String domain = emailAddress.substring(beginningIndex, endingIndex);
+
+        System.out.println(domain);
+
+
+        String p = "I like to Watch movies and reading books";
+
+        String word2 = p.substring( p.indexOf("m"),   p.indexOf(" a") );
+
+        System.out.println(word2);
+
+        String y = "I like to learn Java, Java is cool, I like to watch Jumanji";
+        int n1 = y.indexOf(", J")+2; // second J' index
+
+        System.out.println(n1);
+
+        int n2 = y.lastIndexOf("J");
+        System.out.println(n2);
+
+        String name = "My name is Muhtar";
+
+        String result = name.substring( name.lastIndexOf("M")   );
+
+        System.out.println(result);
+
+
 
 
 
