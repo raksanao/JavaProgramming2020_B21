@@ -48,7 +48,14 @@ public class StringMethods {
         System.out.println("Enter your first name: ");
         String firstName =    scan.nextLine();
               firstName = firstName.trim();
+
+        System.out.println("Enter your last name: ");
+        String lastName = scan.nextLine();
+                lastName = lastName.trim();
+
         System.out.println("First name is: "+firstName);
+
+        System.out.println("Last name is: "+lastName);
 
 
 
