@@ -62,6 +62,17 @@ public class StringPractice {
         System.out.println("First character: "+firstChar);
         System.out.println("Last character: "+lastChar);
 
+        System.out.println("======================================");
+
+        String b = "Today is Monday, and it's fun";
+
+        char secondChar = b.charAt(1);
+        char secondLastChar = b.charAt( b.length()-2);
+
+        System.out.println("secondChar = " + secondChar);
+        System.out.println("secondLastChar = " + secondLastChar);
+
+
 
 
 
