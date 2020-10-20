@@ -45,6 +45,33 @@ public class ForLoopPractice {
             System.out.print(i+" ");
         }
 
+        System.out.println();
+
+
+        System.out.println("====================================================");
+
+        for(int i = 0; i <= 100; i++){
+            if(i%2==0){
+                System.out.println(i+" ");
+            }
+        }
+        System.out.println();
+
+        System.out.println("==================================================");
+
+        for(int i = 1; i <= 500; i++){
+            System.out.println("Push Up "+i);
+        }
+
+        System.out.println();
+
+        char a = 65;
+        System.out.println(a);
+
+
+
+
+
 
 
 
@@ -61,9 +88,6 @@ tasks:
         2. print out the numbers between 100 ~ 200
         3. print out all the odd numbers between 0 ~ 100
         4. print out all the even numbers between 0 ~ 100
-
-        come back at: 12:15 pm
-
-        5. do 50 push ups
+        5. do 500 push ups
 
  */
