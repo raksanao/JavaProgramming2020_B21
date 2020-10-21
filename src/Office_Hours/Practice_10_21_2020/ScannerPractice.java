@@ -28,7 +28,7 @@ public class ScannerPractice {
                 grade = "Fail";
             }
 */
-            grade = (score >= 90) ? "Excellent" :(score>= 80 )? "Great" :(score >= 70)? "Good"
+            grade = (score >= 90)? "Excellent" :(score>= 80 )? "Great" :(score >= 70)? "Good"
                     :(score >= 60)? "Passed" : "Fail";
 
         }else{
