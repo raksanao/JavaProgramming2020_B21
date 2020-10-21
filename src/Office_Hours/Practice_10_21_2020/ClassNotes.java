@@ -48,6 +48,7 @@ methods of Scanner:
 		"Batch 21 is the best" ==> Batch
 
 	nextLine(): String, takes every thing. even the Enter
+				only method of the scanner that does not ignore the enter
 
 Task:
 
@@ -58,6 +59,8 @@ Task:
 5. ask country name ( nextLine() )
 6. ask salary ( nextDouble() )
 7. ask company name  ( nextLine() )
+
+
 
 
 
