@@ -15,7 +15,7 @@ public class ScannerPractice {
         String grade = "";
 
         if(score >= 0 && score <= 100){
-
+/*
             if(score >= 90 ){ // becomes false when score < 90
                 grade = "Excellent";
             }else if(score>= 80 ){ // becomes false when score < 80
@@ -27,6 +27,9 @@ public class ScannerPractice {
             }else{
                 grade = "Fail";
             }
+*/
+            grade = (score >= 90) ? "Excellent" :(score>= 80 )? "Great" :(score >= 70)? "Good"
+                    :(score >= 60)? "Passed" : "Fail";
 
         }else{
             grade = "Invalid";
