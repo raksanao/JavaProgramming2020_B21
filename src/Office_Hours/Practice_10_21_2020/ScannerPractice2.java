@@ -19,6 +19,7 @@ public class ScannerPractice2 {
 
         System.out.println("Enter your full name: ");
         String fullName = scan.nextLine();
+        scan.close();
 
         System.out.println("Full Name: "+fullName);
 
