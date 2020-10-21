@@ -20,6 +20,8 @@ public class ScannerPractice2 {
         System.out.println("Enter your full name: ");
         String fullName = scan.nextLine();
 
+        System.out.println("Full Name: "+fullName);
+
 
     }
 
