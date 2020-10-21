@@ -61,10 +61,6 @@ Task:
 7. ask company name  ( nextLine() )
 
 
-
-
-
-
      */
 
 }
