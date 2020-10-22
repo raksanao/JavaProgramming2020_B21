@@ -31,7 +31,7 @@ public class SumOfUserEnteredNumbers {
         int result = 0; //to contain the sum of user entered numbers
             //+1= 1 + 2 = 3 + 3 = 6 + 4 = 10 + 5 = 15
 
-        for(int i =1; i <= times ; i++){
+        for(int i =1; i <= times ; i++){ // we allowed the user to decide how many number he wants to enter
             System.out.println("Enter a number: "+i);
            result += scan.nextInt(); // each user input will be added to result
         }
