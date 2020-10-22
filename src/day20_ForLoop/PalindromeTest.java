@@ -17,11 +17,15 @@ public class PalindromeTest {
 
         System.out.println("result: " + result);
 
+
         if( result.equalsIgnoreCase(word) ) {
             System.out.println(word + " is palindrome");
         }else{
             System.out.println(word + " is not palindrome ");
         }
+
+
+    //  System.out.println(word + (result.equalsIgnoreCase(word)?" is palindrome":" is not palindrome") );
 
 
 
