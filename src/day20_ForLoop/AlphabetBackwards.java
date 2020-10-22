@@ -20,6 +20,7 @@ public class AlphabetBackwards {
         for(int i = 122; i >= 97; i--){
             System.out.print( (char)i +" ");
         }
+
         System.out.println();
 
         for(char i = 'z'; i >= 'a'; i--){
