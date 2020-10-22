@@ -18,7 +18,7 @@ public class Alphabet {
         System.out.println("====================================================");
        // a ~ z: 97 ~ 122
         for(int i = 97; i <= 122; i++){
-            System.out.print( (char)i +" " );
+            System.out.print( (char)i +" ");
         }
         System.out.println();
 
