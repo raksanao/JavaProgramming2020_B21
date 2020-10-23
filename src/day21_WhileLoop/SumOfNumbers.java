@@ -15,9 +15,9 @@ public class SumOfNumbers {
 
             if(num<0){ // if the user entered number is negative, it will not be added to teh result.
                 break;
+            }else {
+                result += num;
             }
-
-            result += num;
 
         }
 
