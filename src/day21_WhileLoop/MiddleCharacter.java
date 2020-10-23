@@ -11,8 +11,8 @@ public class MiddleCharacter {
 
         // first req
         if (word.length() >= 3) {
-            System.out.println(word.charAt(word.length() / 2));
-        }else{  // sec rqu
+            System.out.println( word.charAt(word.length()/2) );
+        }else{  // has 1 char only
             System.out.println(word + word + word);
         }
 
@@ -21,10 +21,10 @@ public class MiddleCharacter {
          // "apples" ==> pl ==> 2, 3
         // "cybertek"==>er ==> 3, 4(length/2)
 
-        if(word.length()>= 4){
+        if(word.length()>= 4){  // has more than 4 chars
             int m = word.length()/2;
             System.out.println(word.charAt(m-1) +""+ word.charAt(m));
-        }else{
+        }else{ // for 2 chars
             System.out.println(word+word);
         }
 
