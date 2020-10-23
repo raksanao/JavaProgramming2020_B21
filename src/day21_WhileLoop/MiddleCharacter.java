@@ -4,13 +4,14 @@ public class MiddleCharacter {
 
     public static void main(String[] args) {
 
-        String word = "cybertek"; // 3/2 = 1
+        String word = "cybertek";
+
         //            "javav" // 5/2=2
 
     if(word.length() % 2 !=0) {
 
         // first req
-        if (word.length() >= 3) {
+        if (word.length() >= 3) { // if it has 3 or more characters
             System.out.println( word.charAt(word.length()/2) );
         }else{  // has 1 char only
             System.out.println(word + word + word);
