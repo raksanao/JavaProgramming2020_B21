@@ -18,7 +18,7 @@ public class Timer {
             }
         }
 
-        System.out.println();
+        System.out.println("\n\n");
 
         System.err.println("\t\t\t* * * * * * * * * * * * * * * * * * * * * * * * * *");
         System.err.println("\t\t\t*                                                 *");
