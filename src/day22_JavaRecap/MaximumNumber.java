@@ -30,6 +30,8 @@ public class MaximumNumber {
 
         }
 
+        scan.close();
+
         System.out.println("max = " + max);
         
         
