@@ -16,6 +16,7 @@ public class MaxMin {
             if( n < min){ // if the input is smaller than previous min  number
                 min = n;
             }
+
             if(n > max ){  // if the input is greater than previous max number
                max = n ;
             }
