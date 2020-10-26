@@ -22,6 +22,7 @@ public class MaxMin {
 
         }
 
+        scan.close();
 
         System.out.println("min = " + min);
         System.out.println("max = " + max);
