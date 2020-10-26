@@ -8,6 +8,7 @@ public class DivideTwoNumbers {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();
+        scan.close();
 
         int count = 0;  // number of the times that we can subtract b from a
 
