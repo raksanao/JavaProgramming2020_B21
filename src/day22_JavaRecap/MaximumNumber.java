@@ -16,18 +16,19 @@ public class MaximumNumber {
          */
 
         Scanner scan = new Scanner(System.in);
-        int max = -99999999; // 95
-            // user most likely to enter a number thats greater than -999999
+        int max = -2147483648;
+            // user most likely to enter a number that's greater than -2147483648
 
-        for(int i =1; i <= 10; i++){
+        for(int i =1; i <= 5; i++){
+
             System.out.println("Enter a number: ");
+
             int n = scan.nextInt(); // -1000, -20, 0, 5, 3, 25, 35, 45, 75, 95
             if(n > max){ //
                 max = n;
             }
 
         }
-
 
         System.out.println("max = " + max);
         
