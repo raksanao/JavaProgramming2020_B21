@@ -52,6 +52,7 @@ public class StringPractice1 {
         System.out.println("Enter your last name: ");
                        // sCH o o L ==>   sch o o l ==>  school
         String lastName = scan.nextLine().toLowerCase().replace(" ", "");
+        scan.close();
 
         firstName = firstName.substring(0, 1).toUpperCase() + firstName.substring(1);  //"Cybertek"
         lastName = lastName.substring(0,1).toUpperCase()+ lastName.substring(1);
