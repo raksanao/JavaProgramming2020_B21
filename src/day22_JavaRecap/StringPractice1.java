@@ -1,5 +1,7 @@
 package day22_JavaRecap;
 
+import java.util.Scanner;
+
 public class StringPractice1 {
 
     public static void main(String[] args) {
@@ -27,8 +29,7 @@ public class StringPractice1 {
         String day2 = str1.substring(0,  str1.indexOf(" ") );
         System.out.println(day2);
 
-
-        String s1 = "https://www.amazon.com";  // .com , .edu ,  .gov,
+        String s1 = "https://www.google.com";  // .com , .edu ,  .gov,
 
         String domain = s1.substring( s1.lastIndexOf(".")+1 );
         System.out.println(domain);
@@ -37,6 +38,27 @@ public class StringPractice1 {
 
         System.out.println(name);
 
+       name = name.substring(0,1).toUpperCase() + name.substring(1) ;   // "Amazon"
+
+        System.out.println(name);
+
+    System.out.println("=====================================================");
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your first name: ");
+                        // c Y B Er TeK=>  c y b er tek =>  cybertek
+        String firstName = scan.nextLine().toLowerCase().replace(" ", "");
+
+        System.out.println("Enter your last name: ");
+                       // sCH o o L ==>   sch o o l ==>  school
+        String lastName = scan.nextLine().toLowerCase().replace(" ", "");
+
+        firstName = firstName.substring(0, 1).toUpperCase() + firstName.substring(1);  //"Cybertek"
+        lastName = lastName.substring(0,1).toUpperCase()+ lastName.substring(1);
+
+        String fullName = firstName+" "+lastName;
+
+        System.out.println("Full Name = " + fullName);
 
 
 
