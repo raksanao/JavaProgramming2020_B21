@@ -22,21 +22,21 @@ public class Credentials {
 
 
         if(username.equals("cybertek") && password.equals("cybertek12345")) {
+                // if the credentials are valid, user will be able to login
             System.out.println("Logged In");
 
         }else{ // condition for invalid username and password
 
-            for(int i =1; i <= 3; i++) {
+            for(int i =1; i <= 3; i++) {  // i: 1, 2, 3
 
                 if(i == 3){
                     System.err.println("Your account is locked");
-                    System.exit(0);
+                    System.exit(0);  // terminates the program
                 }
 
                 System.out.println("Invalid username or password, please re enter");
                 System.out.println("Enter your username");
                 username = scan.next();
-
                 System.out.println("Enter your password");
                 password = scan.next();
 
@@ -46,8 +46,14 @@ public class Credentials {
                 }
 
             }
-
         }
+
+
+        System.out.println("Hello World");
+
+
+
+
 
 
 
