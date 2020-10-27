@@ -29,7 +29,7 @@ public class Credentials {
 
             for(int i =1; i <= 3; i++) {  // i: 1, 2, 3
 
-                if(i == 3){
+                if(i == 3){  // if the attempt is already 3, the account should be locked
                     System.err.println("Your account is locked");
                     System.exit(0);  // terminates the program
                 }
