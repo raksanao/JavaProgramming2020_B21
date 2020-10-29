@@ -55,15 +55,7 @@ public class RoomReserveProgram {
         System.out.println("total price: " + totalPrice);
 
 
-
-
-
     }
-
-
-
-
-
 
 
 }
