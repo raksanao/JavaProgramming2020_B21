@@ -10,16 +10,24 @@ public class Calculator {
 
         while(true){
             System.out.println("Enter a number");
-            int n1 = scan.nextInt();
+            int n1 = scan.nextInt(); // 9
 
             System.out.println("Enter a number");
-            int n2 = scan.nextInt();
+            int n2 = scan.nextInt(); // 10
 
             result = n1 + n2;
             System.out.println("result = " + result);
 
+            scan.nextLine(); // EnterEnter
+
             System.out.println("Would you like to continue?");
-            String a = scan.next().toLowerCase();
+            String a = scan.nextLine().toLowerCase();
+
+            while( !(a.equals("yes") || a.equals("no")) ){ // while the answer is invalid (yes or no)
+                System.out.println("Invalid Entry, Please Re-Enter");
+                System.out.println("Would you like to continue?");
+                a = scan.nextLine().toLowerCase();
+            }
 
             if(a.equals("no")){
                 break;
