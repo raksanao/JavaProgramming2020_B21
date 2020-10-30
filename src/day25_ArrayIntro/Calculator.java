@@ -50,6 +50,7 @@ public class Calculator {
 
         scan.close();
 
+//format the code:  control + ALT + L
 
     }
 
