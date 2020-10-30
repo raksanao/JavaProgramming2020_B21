@@ -13,7 +13,7 @@ public class RoomReservation {
          System.out.println("Which room would you like to select?");
          System.out.println("\t\tKing Bed == $120");
          System.out.println("\t\tQueen Bed == $100");
-         System.out.println("\t\tSingle Bed == 80$");
+         System.out.println("\t\tSingle Bed == $80");
 
          String word = scan.nextLine().toLowerCase();
 
@@ -31,9 +31,10 @@ public class RoomReservation {
              System.out.println("Invalid Entry, please re-enter");
              System.out.println("Would you like to select another room?");
              a = scan.nextLine().toLowerCase();
-         }
+         } // it stops if the answer is either ye or no
 
          if(a.equals("no")){
+             System.out.println("Your total price is: $"+total);
              break;
          }
 
