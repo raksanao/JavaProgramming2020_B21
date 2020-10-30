@@ -35,6 +35,12 @@ public class Calculator {
         System.out.println("Would you like to continue?");
         String a = scan.next().toLowerCase();
 
+        while ( !(a.equals("yes") || a.equals("no"))  ){ // while the answer is not valid
+            System.out.println("Invalid Answer, Please Re-Enter");
+            System.out.println("Would you like to continue?");
+            a = scan.next().toLowerCase();
+        }
+
         if(a.equals("no")) {
             break;
         }
