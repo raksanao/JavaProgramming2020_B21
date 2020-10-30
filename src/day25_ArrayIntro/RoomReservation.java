@@ -8,7 +8,6 @@ public class RoomReservation {
         Scanner scan = new Scanner(System.in);
         int total = 0;
 
-
      while(true) {
          System.out.println("Which room would you like to select?");
          System.out.println("\t\tKing Bed == $120");
