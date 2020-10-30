@@ -30,8 +30,14 @@ public class Calculator {
                 break;
             default:
                 System.out.println("Invalid");
-        }
+        }  // calculates the result
 
+        System.out.println("Would you like to continue?");
+        String a = scan.next().toLowerCase();
+
+        if(a.equals("no")) {
+            break;
+        }
 
     }
 
