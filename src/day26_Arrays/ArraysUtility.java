@@ -42,11 +42,9 @@ public class ArraysUtility {
         System.out.println("Second maximum number: "+arr2[arr2.length-1-1]);
 
         String[] names = {"Haroon", "Nurahmet", "Livio", "Dean", "Ayah", "afrooz", "me"};
-
         Arrays.sort(names);
 
         System.out.println( Arrays.toString(names)  );
-
 
 
 
