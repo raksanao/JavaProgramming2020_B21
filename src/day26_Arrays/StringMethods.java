@@ -30,6 +30,14 @@ public class StringMethods {
 
         System.out.println(isAnagram);
 
+
+    //split(str):
+        String sentence = "Today is great day";
+        String[] words =  sentence.split(" ");
+
+        System.out.println(  Arrays.toString(words)  );
+
+
     }
 
 
