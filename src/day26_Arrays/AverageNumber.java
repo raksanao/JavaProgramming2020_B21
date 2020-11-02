@@ -11,7 +11,7 @@ public class AverageNumber {
 
         int[] numbers = new int[length];
         int sum = 0;
-
+                    //i <= length-1
         for(int i=0; i < length; i++){
             System.out.println("Enter a number");
             numbers[i] = scan.nextInt();
