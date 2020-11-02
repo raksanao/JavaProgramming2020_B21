@@ -47,6 +47,18 @@ public class ArraysUtility {
         System.out.println( Arrays.toString(names)  );
 
 
+    // equals(arr1, arr2)
+        int[] a1 = {1, 2, 3};
+        int[] a2 = {1, 3, 2};
+
+        Arrays.sort(a1);  //[1, 2, 3]
+        Arrays.sort(a2);  //[1, 2, 3]
+
+        boolean r1 = Arrays.equals(a1, a2);
+        System.out.println(r1);
+
+
+
 
     }
 
