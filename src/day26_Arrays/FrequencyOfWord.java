@@ -11,22 +11,20 @@ public class FrequencyOfWord {
         int countJava = 0;
         int countPython = 0;
 
-        for(int i =0; i <= arr.length-1;  i++){
-            String eachWord = arr[i];
-            if(eachWord.toLowerCase().contains("java")){
+        for (int i = 0; i <= arr.length - 1; i++) {
+
+            if (arr[i].toLowerCase().contains("java")) {
                 countJava++;
             }
 
-            if(eachWord.toLowerCase().contains("python")){
+            if (arr[i].toLowerCase().contains("python")) {
                 countPython++;
             }
 
         }
 
-        System.out.println("Java: "+countJava);
-        System.out.println("Python: "+countPython);
-
-
+        System.out.println("Java: " + countJava);
+        System.out.println("Python: " + countPython);
 
     }
 
