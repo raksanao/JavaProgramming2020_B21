@@ -24,7 +24,6 @@ public class FrequencyOfSingleChar {
             }
         }
 
-
         System.out.println(frequency);
 
         // 1
