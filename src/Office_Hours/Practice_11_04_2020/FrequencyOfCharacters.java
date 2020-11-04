@@ -19,18 +19,12 @@ public class FrequencyOfCharacters {
            if(result.contains( ""+ch )){ // if the char is already in the result, we dont need to concate it again, we can skip
                continue;
             }
-
             result +=  "" + ch + count;
-
         }
 
 
 
         System.out.println(result);
-
-
-
-
 
 
 
