@@ -13,7 +13,7 @@ public class LongestString {
             if(each.length() > longest.length() ){
                longest = each;
             }
-            
+
             if(each.length() < shortest.length()){
                 shortest = each;
             }
