@@ -55,6 +55,14 @@ public class MultiDimensionalArrays {
 
         System.out.println("=========================================================");
 
+        for(int i = batch21.length-1; i >= 0 ; i-- ){ // i: 2, 1, 0    represents the index num of 1D arrays
+
+            for(int j = batch21[i].length-1;  j >=0; j-- ){ // j: represents the index of elements
+                System.out.print( batch21[i][j] +"  "  );
+            }
+
+        }
+
 
 
 
