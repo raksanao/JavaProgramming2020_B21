@@ -42,9 +42,7 @@ public class SingleDimensionalArray {
             System.out.println(each);
         }
 
-
-
-
+        
     }
 
 }
