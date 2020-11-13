@@ -12,6 +12,7 @@ public class Calculator {
 
       //  calculator(scan.nextDouble(),  scan.next().charAt(0), scan.nextDouble() );
 
+
     }
 
 
