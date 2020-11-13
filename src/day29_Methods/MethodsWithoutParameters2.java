@@ -8,6 +8,7 @@ public class MethodsWithoutParameters2 {
 
         printOddNumbers1To100();
 
+        printEvenNumber1to100();
 
 
     }
@@ -31,8 +32,6 @@ public class MethodsWithoutParameters2 {
         }
         System.out.println();
     }
-
-
 
 
 

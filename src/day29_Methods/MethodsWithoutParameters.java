@@ -13,6 +13,11 @@ public class MethodsWithoutParameters {
 
         MethodsWithoutParameters.printHello5Times();
 
+        System.out.print("Odd Number: ");
+        MethodsWithoutParameters2.printOddNumbers1To100();
+
+        System.out.print("Even Numbers: ");
+        MethodsWithoutParameters2.printEvenNumber1to100();
 
 
 
