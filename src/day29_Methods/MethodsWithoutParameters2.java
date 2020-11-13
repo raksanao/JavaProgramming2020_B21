@@ -36,3 +36,12 @@ public class MethodsWithoutParameters2 {
 
 
 }
+
+/*
+void method without parameter
+void method with parameter
+
+return methods
+
+overloading
+ */
