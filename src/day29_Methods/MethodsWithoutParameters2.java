@@ -41,7 +41,6 @@ public class MethodsWithoutParameters2 {
 void method without parameter
 void method with parameter
 
-return methods
-
-overloading
+return methods with and without parameters
+method overloading
  */
