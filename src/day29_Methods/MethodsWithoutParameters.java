@@ -14,6 +14,8 @@ public class MethodsWithoutParameters {
         MethodsWithoutParameters.printHello5Times();
 
 
+
+
     }
 
     // AccessModifier  specifier   returnTYPE   MethodName (Parameter){ }
