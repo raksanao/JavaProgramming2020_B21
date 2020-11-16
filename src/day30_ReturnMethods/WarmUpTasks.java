@@ -37,6 +37,11 @@ public class WarmUpTasks {
         String str = "pppppooooooiiiiuuuuuuyyyyttttttt";
         removeDuplicates(str);
 
+        System.out.println("=============================================");
+
+        formattedFullName("cyBERteK", "SCHooL");
+
+
     }
 
     //task1:
@@ -110,8 +115,15 @@ public class WarmUpTasks {
         System.out.println( result);
     }
 
-    // task5:
+    // task5:                           // "cYbErTeK" ,
+    public static void formattedFullName(String first, String last){
+       first = first.substring(0,1).toUpperCase() + first.substring(1).toLowerCase() ;     //"Cybertek"
+        last = last.substring(0,1).toUpperCase() + last.substring(1).toLowerCase() ;   // School
 
+        String fullName = first + " " + last;
+
+        System.out.println(fullName);
+    }
 
 
 }
@@ -127,7 +139,7 @@ public class WarmUpTasks {
 
         abc
 
-5.  write a method that can print out the full name of a person in reugral format
+5.  write a method that can print out the full name of a person in regular format
             ex:
                fullName("cYbErTeK", "SCHOOL");
 
