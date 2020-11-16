@@ -50,6 +50,12 @@ public class ArraysUtility {
         }
 
         return reversedArray;
+    }   // sorts in descending order
+
+    public static String printArray(int[] arr){
+        String str = Arrays.toString(arr);
+        str = str.replace("[", "{").replace("]", "}");
+        return str;
     }
 
 
