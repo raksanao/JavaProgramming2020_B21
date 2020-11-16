@@ -12,9 +12,10 @@ public class WarmUpTasks {
         System.out.println("===================================");
             int[] numbers = {1, 2, 3, 4, -5, -6, -7, -8, 10, 11, 0};
 
-            for(int each : numbers){
-                positiveNegativeZero(each);
+            for(int i =0; i <= numbers.length-1; i++){
+                positiveNegativeZero( numbers[i] );
             }
+
 
 
     }
@@ -25,12 +26,14 @@ public class WarmUpTasks {
         System.out.println(number+" is "+result);
     }
 
+    //task2:
+
 
 }
 /*
 1. create a function that can check if the given integer is positive, negative or zero
 
-2. create a function that can calculate the garde of the student
+2. create a function that can calculate the grade of the student
 
 3. create a function that can print out the combination of two integer arrays
 
