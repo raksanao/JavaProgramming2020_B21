@@ -1,5 +1,7 @@
 package day30_ReturnMethods;
 
+import java.util.Arrays;
+
 public class WarmUpTasks {
 
 
@@ -21,8 +23,13 @@ public class WarmUpTasks {
         gradeCalculator(85);
 
         //positiveNegativeZero(-120);
-        gradeCalculator(-120);
+     //   gradeCalculator(-120);
 
+        System.out.println("======================================");
+        int[] a1 = {10,50, 60, 70};
+        int[] a2 = {20, 90, 100};
+
+        combineTwoArrays(a1, a2);
 
     }
 
@@ -58,8 +65,24 @@ public class WarmUpTasks {
 
     }
 
-    // task3:
+    // task3:                               {1,2}       {3,4,5}
+    public static void combineTwoArrays(int[] arr1, int[] arr2){
+        int[] arr3 = new int[arr1.length+arr2.length];
+        int i = 0;  // represents the index nums of arr3
 
+        for(int each : arr1){
+           arr3[i++] = each; // each elements of arr1 is being assigned to the index of third array
+        }
+
+        // i= 2
+        for(int each : arr2){
+          arr3[i++]  = each; // each elements of arr2 is being assigned to the index of third array
+        }
+
+        Arrays.sort(arr3);
+        System.out.println(Arrays.toString(arr3) );
+
+    }
 
 
 
