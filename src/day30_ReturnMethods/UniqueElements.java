@@ -59,4 +59,7 @@ public class UniqueElements {
     }
 
 
+    // frequencyOfCharacters("aaabbccccd")  ==> "a3b2c4d1"
+
+
 }
