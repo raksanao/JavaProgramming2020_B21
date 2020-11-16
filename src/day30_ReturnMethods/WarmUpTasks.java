@@ -2,8 +2,28 @@ package day30_ReturnMethods;
 
 public class WarmUpTasks {
 
+
+    public static void main(String[] args) {
+
+            positiveNegativeZero(123);
+            positiveNegativeZero(0);
+            positiveNegativeZero( -10);
+
+        System.out.println("===================================");
+            int[] numbers = {1, 2, 3, 4, -5, -6, -7, -8, 10, 11, 0};
+
+            for(int each : numbers){
+                positiveNegativeZero(each);
+            }
+
+
+    }
+
     //task1:
-    public static void
+    public static void positiveNegativeZero(int number){
+        String result =  (number > 0)? "Positive" :(number < 0)? "Negative" : "Zero";
+        System.out.println(number+" is "+result);
+    }
 
 
 }
