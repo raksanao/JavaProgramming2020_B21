@@ -3,7 +3,9 @@ package library;
 import java.util.Arrays;
 
 public class ArraysUtility {
-
+    /*
+    returns the maximum number from an array of integer
+     */
     public static int max(int[] arr){
         int max =arr[0];
         for( int each  : arr ){
@@ -14,6 +16,10 @@ public class ArraysUtility {
         return max;
     }
 
+
+    /*
+    returns the minimum number from an array of integer
+     */
     public static int min(int[] arr){
         int min = arr[0];
 
@@ -26,6 +32,10 @@ public class ArraysUtility {
         return min;
     }
 
+
+    /*
+    Combines two arrays of integers and return the new array
+     */
     public static int[] combineTwoArrays(int[] arr1, int[] arr2){
         int[] arr3 = new int[arr1.length+arr2.length];
         int i = 0;
@@ -41,6 +51,10 @@ public class ArraysUtility {
        return arr3;
     }
 
+
+    /*
+     sorts the array of integers in descending order, and returns it as an array
+     */
     public static int[] sort(int[] arr){  // {2,1,3}
         Arrays.sort(arr);  // {1,2,3};
         int[] reversedArray = new int[arr.length];  // {3, 2, 1}
@@ -50,8 +64,13 @@ public class ArraysUtility {
         }
 
         return reversedArray;
-    }   // sorts in descending order
+    }
 
+
+
+    /*
+    replaces the [] with {}  while printing the array
+     */
     public static String printArray(int[] arr){
         String str = Arrays.toString(arr);
         str = str.replace("[", "{").replace("]", "}");

@@ -14,6 +14,7 @@ public class StringUtility {
         return count;
     }
 
+
     public static String unique(String str){
         String unique = ""; // "eg"
         for(int i=0; i <= str.length()-1; i++) {
