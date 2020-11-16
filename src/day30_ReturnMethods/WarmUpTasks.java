@@ -31,6 +31,12 @@ public class WarmUpTasks {
 
         combineTwoArrays(a1, a2);
 
+        System.out.println("=======================================");
+        removeDuplicates("aaaaabbbbbbbbbaaaaccccccccbbbbbbbbbdddddd");
+
+        String str = "pppppooooooiiiiuuuuuuyyyyttttttt";
+        removeDuplicates(str);
+
     }
 
     //task1:
@@ -84,6 +90,28 @@ public class WarmUpTasks {
 
     }
 
+    // task4:                           "aabccb"
+    public static void removeDuplicates(String str){
+        String result = "";  //"abc"
+/*
+        for(char each : str.toCharArray() ){  //each: [a, a, b, c, c, b]
+            if(!result.contains( ""+each )){
+                result += each;
+            }
+        }
+ */
+
+        for( int i = 0; i <= str.length()-1; i++  ){
+            if(!result.contains( ""+str.charAt(i) )){
+                result += str.charAt(i);
+            }
+        }
+
+        System.out.println( result);
+    }
+
+    // task5:
+
 
 
 }
@@ -95,6 +123,9 @@ public class WarmUpTasks {
 3. create a function that can print out the combination of two integer arrays
 
 4. create a function that can print a string without the duplicated characters
+        "aaabbbccc"
+
+        abc
 
 5.  write a method that can print out the full name of a person in reugral format
             ex:
