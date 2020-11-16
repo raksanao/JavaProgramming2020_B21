@@ -3,7 +3,6 @@ package library;
 public class StringUtility {
 
 
-
     public static int frequency(String str, char ch){
         int count = 0;
 
