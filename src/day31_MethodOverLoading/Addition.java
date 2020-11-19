@@ -8,6 +8,7 @@ public class Addition {
         System.out.println(  additionOf3Numbers(100, 200, 300) );
         System.out.println(  additionOf4Numbers(100, 200, 300, 400) );
 
+
     }
 
     public static int additionOf2Numbers(int a, int b){
