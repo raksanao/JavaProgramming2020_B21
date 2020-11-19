@@ -53,4 +53,8 @@ public class MethodOverloading2 {
     }
 
 
+    public static void sum(int a, int b, double c){
+
+    }
+
 }
