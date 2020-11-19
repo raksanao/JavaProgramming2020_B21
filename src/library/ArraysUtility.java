@@ -84,6 +84,7 @@ public class ArraysUtility {
     }
 
 
+
     /*
      sorts the array of integers in descending order, and returns it as an array
      */
@@ -93,6 +94,51 @@ public class ArraysUtility {
 
         for(int i=arr.length-1, j = 0 ;  i>=0; i--, j++){
           reversedArray[j] = arr[i];
+        }
+
+        return reversedArray;
+    }
+
+
+    /*
+     sorts the array of double in descending order, and returns it as an array
+     */
+    public static double[] sort(double[] arr){  // {2,1,3}
+        Arrays.sort(arr);  // {1,2,3};
+        double[] reversedArray = new double[arr.length];  // {3, 2, 1}
+
+        for(int i=arr.length-1, j = 0 ;  i>=0; i--, j++){
+            reversedArray[j] = arr[i];
+        }
+
+        return reversedArray;
+    }
+
+
+    /*
+     sorts the array of char in descending order, and returns it as an array
+     */
+    public static char[] sort(char[] arr){  // {2,1,3}
+        Arrays.sort(arr);  // {1,2,3};
+        char[] reversedArray = new char[arr.length];  // {3, 2, 1}
+
+        for(int i=arr.length-1, j = 0 ;  i>=0; i--, j++){
+            reversedArray[j] = arr[i];
+        }
+
+        return reversedArray;
+    }
+
+
+    /*
+     sorts the array of String in descending order, and returns it as an array
+     */
+    public static String[] sort(String[] arr){
+        Arrays.sort(arr);  // {1,2,3};
+        String[] reversedArray = new String[arr.length];  // {3, 2, 1}
+
+        for(int i=arr.length-1, j = 0 ;  i>=0; i--, j++){
+            reversedArray[j] = arr[i];
         }
 
         return reversedArray;
