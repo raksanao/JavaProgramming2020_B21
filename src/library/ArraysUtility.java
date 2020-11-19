@@ -3,6 +3,7 @@ package library;
 import java.util.Arrays;
 
 public class ArraysUtility {
+
     /*
     returns the maximum number from an array of integer
      */
