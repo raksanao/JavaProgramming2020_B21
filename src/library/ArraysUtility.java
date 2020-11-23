@@ -156,29 +156,64 @@ public class ArraysUtility {
     }
 
 
-
-    public static int[] addElement(int[] array, int number){
+    /*
+        adds element to the integer array
+     */
+    public static int[] addElement(int[] array, int element){
         int[] result = new int[array.length + 1];
 
         for(int i = 0; i <= array.length-1; i++ ){
             result[i]  = array[i];
         }
 
-        result[result.length-1] = number;
+        result[result.length-1] = element;
 
         return result;
     }
 
-
-
-    public static double[] addElement(double[] array, double number){
+    /*
+        adds element to the double array
+     */
+    public static double[] addElement(double[] array, double element){
         double[] result = new double[array.length + 1];
 
         for(int i = 0; i <= array.length-1; i++ ){
             result[i]  = array[i];
         }
 
-        result[result.length-1] = number;
+        result[result.length-1] = element;
+
+        return result;
+    }
+
+    /*
+        adds element to the char array
+     */
+    public static char[] addElement(char[] array, char element){
+        char[] result = new char[array.length + 1];
+
+        for(int i = 0; i <= array.length-1; i++ ){
+            result[i]  = array[i];
+        }
+
+        result[result.length-1] = element;
+
+        return result;
+    }
+
+    /*
+
+        adds element to the String array
+
+     */
+    public static String[] addElement(String[] array, String element){
+        String[] result = new String[array.length + 1];
+
+        for(int i = 0; i <= array.length-1; i++ ){
+            result[i]  = array[i];
+        }
+
+        result[result.length-1] = element;
 
         return result;
     }
