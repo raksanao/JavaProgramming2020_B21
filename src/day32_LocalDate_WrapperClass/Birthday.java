@@ -5,9 +5,9 @@ import java.time.LocalDate;
 public class Birthday {
 
     public static void main(String[] args) {
+        LocalDate DofB = LocalDate.of(1998, 11, 23);
 
-
-        HappyBirthDay(11,23);
+        HappyBirthDay(DofB.getMonthValue(), DofB.getDayOfMonth());
 
     }
 
