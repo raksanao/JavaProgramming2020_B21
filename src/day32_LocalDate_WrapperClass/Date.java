@@ -34,6 +34,8 @@ public class Date {
 
         for( int i = 0; i <= names.length-1; i++){
             System.out.println( names[i] + "' birthday is: "+ birthdays[i]);
+            System.out.println(names[i] +" was born on leap year: " +  birthdays[i].isLeapYear()+"\n" );
+
         }
 
 
