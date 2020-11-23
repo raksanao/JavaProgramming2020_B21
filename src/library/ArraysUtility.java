@@ -66,7 +66,7 @@ public class ArraysUtility {
 
 
     /*
-    Combines two arrays of integers and return the new array
+        Combines two arrays of integers and return the new array
      */
     public static int[] combineTwoArrays(int[] arr1, int[] arr2){
         int[] arr3 = new int[arr1.length+arr2.length];
@@ -81,6 +81,63 @@ public class ArraysUtility {
         }
 
        return arr3;
+    }
+
+
+    /*
+       Combines two arrays of double and return the new array
+    */
+    public static double[] combineTwoArrays(double[] arr1, double[] arr2){
+        double[] arr3 = new double[arr1.length+arr2.length];
+        int i = 0;
+
+        for(double each : arr1){
+            arr3[i++] = each;
+        }
+
+        for(double each : arr2){
+            arr3[i++]  = each;
+        }
+
+        return arr3;
+    }
+
+
+    /*
+       Combines two arrays of char and return the new array
+    */
+    public static char[] combineTwoArrays(char[] arr1, char[] arr2){
+        char[] arr3 = new char[arr1.length+arr2.length];
+        int i = 0;
+
+        for(char each : arr1){
+            arr3[i++] = each;
+        }
+
+        for(char each : arr2){
+            arr3[i++]  = each;
+        }
+
+        return arr3;
+    }
+
+
+    /*
+       Combines two arrays of String and return the new array
+    */
+    public static String[] combineTwoArrays(String[] arr1, String[] arr2){
+        String[] arr3 = new String[arr1.length+arr2.length];
+        int i = 0;
+
+        for(String each : arr1){
+            arr3[i++] = each;
+        }
+
+        for(String each : arr2){
+            arr3[i++]  = each;
+        }
+
+        return arr3;
     }
 
 
@@ -171,6 +228,7 @@ public class ArraysUtility {
         return result;
     }
 
+
     /*
         adds element to the double array
      */
@@ -185,6 +243,7 @@ public class ArraysUtility {
 
         return result;
     }
+
 
     /*
         adds element to the char array
@@ -201,10 +260,9 @@ public class ArraysUtility {
         return result;
     }
 
+
     /*
-
         adds element to the String array
-
      */
     public static String[] addElement(String[] array, String element){
         String[] result = new String[array.length + 1];
