@@ -44,6 +44,30 @@ public class WarmUp {
     }
 
 
+    public static char[] addElement(char[] array, char number){
+        char[] result = new char[array.length + 1];
+
+        for(int i = 0; i <= array.length-1; i++ ){
+            result[i]  = array[i];
+        }
+
+        result[result.length-1] = number;
+
+        return result;
+    }
+
+
+    public static String[] addElement(String[] array, String number){
+        String[] result = new String[array.length + 1];
+
+        for(int i = 0; i <= array.length-1; i++ ){
+            result[i]  = array[i];
+        }
+
+        result[result.length-1] = number;
+
+        return result;
+    }
 
 
 

@@ -146,8 +146,6 @@ public class ArraysUtility {
 
 
 
-
-
     /*
     replaces the [] with {}  while printing the array
      */
@@ -155,6 +153,34 @@ public class ArraysUtility {
         String str = Arrays.toString(arr);
         str = str.replace("[", "{").replace("]", "}");
         return str;
+    }
+
+
+
+    public static int[] addElement(int[] array, int number){
+        int[] result = new int[array.length + 1];
+
+        for(int i = 0; i <= array.length-1; i++ ){
+            result[i]  = array[i];
+        }
+
+        result[result.length-1] = number;
+
+        return result;
+    }
+
+
+
+    public static double[] addElement(double[] array, double number){
+        double[] result = new double[array.length + 1];
+
+        for(int i = 0; i <= array.length-1; i++ ){
+            result[i]  = array[i];
+        }
+
+        result[result.length-1] = number;
+
+        return result;
     }
 
 
