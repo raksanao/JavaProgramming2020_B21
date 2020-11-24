@@ -8,7 +8,7 @@ public class WrapperClassPractice {
 
         for(char each : str.toCharArray() ){
             if(Character.isDigit(each)){
-                sum += Integer.parseInt( ""+each );
+                sum += Integer.parseInt( ""+each );  // each digits need to be converted to integer and added to the sum
             }
         }
 
