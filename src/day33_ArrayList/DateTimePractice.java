@@ -50,4 +50,9 @@ public class DateTimePractice {
 				ex:
 					November/25, Wednesday
 
+    3. create an array of string and store 5 of your friends' names
+       create an array of LocalDate and store their DofB
+
+       find out who is youngest and oldest
+
  */
