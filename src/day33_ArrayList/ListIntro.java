@@ -28,6 +28,20 @@ public class ListIntro {
 
 
         System.out.println(groceryList);
+        
+        String item1 =  groceryList.get(2);
+
+        System.out.println("item1 = " + item1);
+
+        String item2 = groceryList.get(1);
+        System.out.println("item2 = " + item2);
+
+     //   System.out.println( groceryList.get(100)  );
+
+        int total = groceryList.size();
+        System.out.println("total = " + total);
+
+        System.out.println( groceryList.get(  groceryList.size()-1  ) );
 
 
 
