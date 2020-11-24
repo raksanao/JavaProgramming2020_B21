@@ -16,7 +16,7 @@ public class WrapperClassPractice {
         System.out.println("sum = " + sum);
 
         System.out.println("====================================================");
-            String password = "Word#7";
+            String password = "passWord#7";
 
             String upperLetters = "";
             String lowerLetters = "";
