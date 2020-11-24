@@ -37,6 +37,40 @@ public class ListMethods {
         int[] arr = {10,20,30,40};
         arr[1] = 200;
 
+        // remove(index)
+        ArrayList<Character> list = new ArrayList<>();
+        list.add('A');
+        list.add('B');
+        list.add('C');
+        list.add('D');
+        list.add('E');
+
+        System.out.println(list);
+
+        list.remove(2);
+
+        System.out.println(list);
+
+        list.remove(2);
+
+        System.out.println(list);
+
+        // remove(object)
+        ArrayList<Character> list2 = new ArrayList<>();
+        list2.add('A');
+        list2.add('B');
+        list2.add('C');
+        list2.add('D');
+        list2.add('E');
+
+      //  Character ch = 'C';
+
+       boolean r1 =  list2.remove( Character.valueOf('X')  ); // 67
+
+        System.out.println(list2);
+        System.out.println(r1);
+
+
 
     }
 
