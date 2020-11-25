@@ -15,7 +15,7 @@ public class MethodPractice {
     //    grade(5.5);
         grade(85);
 
-
+        eligibleToVote(25,false);
 
 
     }
@@ -90,6 +90,24 @@ public class MethodPractice {
         }
 
     }
+
+    public static void eligibleToVote(int age, boolean isUSCitizen){
+
+        if(age < 18){ // if age is not qualified
+            System.out.println("You must be at least 18 years old");
+            return; // exits the current method
+        }
+
+        if(isUSCitizen == false){ // if the person is not us citizen
+            System.out.println("You must be a US citizen in order to vote");
+            return; // exits the current method
+        }
+
+        System.out.println("You are eligible to vote");
+
+    }
+
+
 
 
 }
