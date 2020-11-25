@@ -30,9 +30,15 @@ public class MethodPractice2 {
        return  max( max(a,b,c)  ,  d   );
     }
 
+    public static double max(double a, double b){
+        return (a>=b)? a : b ;
+    }
+
 
     /*
     create methods for min number
+
+    make sure that max method also accepts decimals
      */
 
 
