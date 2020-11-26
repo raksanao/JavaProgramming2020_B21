@@ -59,11 +59,6 @@ public class LoopsPractice1 {
 
 
 
-
-
-
-
-
     }
 
 }
