@@ -42,6 +42,11 @@ public class FindUniques {
 
         System.out.println( Arrays.toString(result2));
 
+        char[] chars = {'#', '#', '$', '%', '!', '!', '^'};
+        char[] result3 = uniques(chars);
+
+        System.out.println(Arrays.toString(result3));
+
     }
 
     public static String[] uniques(String[] arr ){
