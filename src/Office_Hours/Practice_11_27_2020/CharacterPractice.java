@@ -25,6 +25,8 @@ public class CharacterPractice {
         System.out.println("countLetters = " + countLetters);
         System.out.println("countDigits = " + countDigits);
 
+        System.out.println(countSpecialChars+countLetters+countDigits);
+
 
 
     }
