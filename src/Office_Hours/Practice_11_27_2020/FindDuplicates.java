@@ -20,6 +20,7 @@ public class FindDuplicates {
             }
 
             if(count != 1){ // responsible to verify if the element is duplicated
+                    // && !duplicatedElementsList.contains(chars[i])   need to be added if we want to add only one element of duplicates
                 duplicatedElementsList.add( chars[i] );
             }
 
