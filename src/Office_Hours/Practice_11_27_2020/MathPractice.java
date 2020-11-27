@@ -1,7 +1,7 @@
 package Office_Hours.Practice_11_27_2020;
 
 import java.text.DecimalFormat;
-import java.util.Random;
+
 
 public class MathPractice {
 
