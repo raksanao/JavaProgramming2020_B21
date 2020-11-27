@@ -1,5 +1,7 @@
 package Office_Hours.Practice_11_27_2020;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class CombineTwoArrays {
@@ -15,6 +17,14 @@ public class CombineTwoArrays {
         for(char each : ch2) list.add(each);
 
         System.out.println(list);
+
+        /*
+
+         */
+
+        DateTimeFormatter tf = DateTimeFormatter.ofPattern("h:mm a");
+        LocalTime breakTime = LocalTime.now().plusMinutes(10);
+        System.out.println( "Come back at: "+ breakTime.format(tf) );
 
 
 
