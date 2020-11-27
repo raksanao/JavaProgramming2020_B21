@@ -419,7 +419,7 @@ public class ArraysUtility {
 
 
     /*
-        find the unique ele
+        find the unique elements form an array of String and returns it
      */
     public static String[] uniques(String[] arr ){
         ArrayList<String> uniqueElementsList = new ArrayList<>();
@@ -446,7 +446,9 @@ public class ArraysUtility {
     }
 
 
-
+    /*
+       find the unique elements form an array of integer and returns it
+    */
     public static int[] uniques(int[] arr ){
         ArrayList<Integer> uniqueElementsList = new ArrayList<>();
 
@@ -472,7 +474,9 @@ public class ArraysUtility {
     }
 
 
-
+    /*
+       find the unique elements form an array of double and returns it
+    */
     public static double[] uniques(double[] arr ){
         ArrayList<Double> uniqueElementsList = new ArrayList<>();
 
@@ -498,7 +502,9 @@ public class ArraysUtility {
     }
 
 
-
+    /*
+       find the unique elements form an array of char and returns it
+    */
     public static char[] uniques(char[] arr ){
         ArrayList<Character> uniqueElementsList = new ArrayList<>();
 
