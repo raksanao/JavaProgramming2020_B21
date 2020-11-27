@@ -1,6 +1,7 @@
 package Office_Hours.Practice_11_27_2020;
 
 import java.text.DecimalFormat;
+import java.util.Random;
 
 public class MathPractice {
 
@@ -41,13 +42,22 @@ public class MathPractice {
         double n5 = Math.sqrt(100); // square root of 100
         System.out.println(n5);
 
-        DecimalFormat df = new DecimalFormat("0.00");
+        DecimalFormat df = new DecimalFormat("0.0000");
 
         double r1 = calculateAreaOfCircle(3);
         System.out.println(r1);
         System.out.println(  df.format(r1)    );
 
         System.out.println( df.format(2.9877777));
+
+        // Java Faker
+
+        int num1 = 100;
+
+        int r2 =   Integer.parseInt ((""+num1).substring(0,2) );
+
+        System.out.println(r2);
+
 
 
     }
