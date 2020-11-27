@@ -69,7 +69,7 @@ public class ReverseArray {
         return reverse;
     }
 
-    public static String[] String(String[] arr){
+    public static String[] reverse(String[] arr){
         String[] reverse = new String[arr.length];
 
         for(int i = arr.length-1, j = 0 ;  i >= 0  ;  i--, j++  ){  //i: index numbers of arr in reversed order
