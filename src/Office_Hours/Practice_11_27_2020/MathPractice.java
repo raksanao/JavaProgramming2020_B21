@@ -54,7 +54,7 @@ public class MathPractice {
 
         int num1 = 100;
 
-        int r2 =   Integer.parseInt ((""+num1).substring(0,2) );
+        int r2 =   Integer.parseInt (  (""+num1).substring(0,2)   );
 
         System.out.println(r2);
 
