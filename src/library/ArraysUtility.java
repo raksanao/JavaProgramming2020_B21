@@ -354,8 +354,9 @@ public class ArraysUtility {
         return nonDup;
     }
 
+
     /*
-        removes the duplicates from an array of integers and returns it
+        removes the duplicates from an array of double and returns it
      */
     public static double[]  removeDuplicates(double[] arr){
         ArrayList<Double> list = new ArrayList<>(); //[1, 2, 3,4 ]
@@ -375,6 +376,9 @@ public class ArraysUtility {
     }
 
 
+    /*
+        removes the duplicates from an array of char and returns it
+     */
     public static char[]  removeDuplicates(char[] arr){
         ArrayList<Character> list = new ArrayList<>(); //[1, 2, 3,4 ]
         for(char each : arr) {
@@ -393,6 +397,9 @@ public class ArraysUtility {
     }
 
 
+    /*
+        removes the duplicates from an array of String and returns it
+     */
     public static String[]  removeDuplicates(String[] arr){
         ArrayList<String> list = new ArrayList<>(); //[1, 2, 3,4 ]
         for(String each : arr) {
@@ -409,5 +416,8 @@ public class ArraysUtility {
 
         return nonDup;
     }
+
+
+
 
 }
