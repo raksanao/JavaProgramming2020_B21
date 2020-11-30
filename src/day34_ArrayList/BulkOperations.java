@@ -52,7 +52,7 @@ public class BulkOperations {
 
         System.out.println(chars);
 
-        String[] names = {"Mustafa", "Numan", "Abdullah","Inna", "Emre", "Sinan","Ramiz","Olesea","Irina"};
+        String[] names = {"Mustafa", "Numan", "Abdullah","Inna", "Emre", "Sinan","Ramiz","Olesea","Irina","Irina","Irina","Inna","Inna","Inna"};
 
         ArrayList<String> students = new ArrayList<>( Arrays.asList(names) );
 
@@ -60,7 +60,41 @@ public class BulkOperations {
 
         System.out.println(students);
 
+        ArrayList<Character> ch1 =  new ArrayList<>( Arrays.asList('A', 'B', 'C', 'D', 'E') );
+        ch1.addAll( Arrays.asList('J', 'K', 'L', 'M', 'N') );
 
+        System.out.println(ch1);
+
+        System.out.println("=================================================");
+        ArrayList<String> group2 = new ArrayList<>();
+        group2.addAll( Arrays.asList( names ) );
+
+        System.out.println(group2);
+        /*
+        group2.remove("Irina");
+        group2.remove("Sinan");
+        group2.remove("Inna");
+        group2.remove("Mustafa");
+        */
+
+        group2.removeAll(  Arrays.asList("Inna", "Irina", "Mustafa", "Sinan") );
+
+        System.out.println(group2);
+
+        System.out.println("===========================================================");
+        ArrayList<String> employees = new ArrayList<>();
+        employees.addAll(  Arrays.asList("Ahmed", "Ahmed", "Erjon", "Ahmed", "Ahmed", "Adil", "Afrooz") );
+        /*
+        for(int i=0; i <= employees.size()-1; i++){
+            if( employees.get(i).equals("Ahmed")  ){
+                employees.remove(i); // without the interface iterable, remove method cannot be used in loop
+            }
+        }
+ */
+
+        employees.removeAll(  Arrays.asList("Ahmed") );
+
+        System.out.println(employees);
 
 
 
