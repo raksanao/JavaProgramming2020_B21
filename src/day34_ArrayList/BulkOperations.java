@@ -90,12 +90,22 @@ public class BulkOperations {
                 employees.remove(i); // without the interface iterable, remove method cannot be used in loop
             }
         }
- */
+        */
 
         employees.removeAll(  Arrays.asList("Ahmed") );
 
         System.out.println(employees);
 
+        System.out.println("=========================================================");
+        // retainAll
+        ArrayList<String> employees2 = new ArrayList<>();
+        employees2.addAll(  Arrays.asList("Ahmed", "Ahmed", "Erjon", "Ahmed", "Ahmed", "Adil", "Afrooz") );
+
+        System.out.println(employees2);
+
+        employees2.retainAll( Arrays.asList("Ahmed") );
+
+        System.out.println(employees2);
 
 
 
