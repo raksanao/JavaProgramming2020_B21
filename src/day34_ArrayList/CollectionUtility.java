@@ -33,6 +33,45 @@ public class CollectionUtility {
         System.out.println("Minimum Number: " + scores.get(0));
         System.out.println("Maximum Number: "+scores.get( scores.size()-1  ));
 
+        System.out.println(scores);
+
+        Collections.swap(scores, 2, 3 );
+
+        System.out.println(scores);
+
+        Collections.swap(scores, 0, scores.size()-1);
+
+        System.out.println(scores);
+
+        Collections.swap(scores,  scores.indexOf(60), scores.lastIndexOf(70) );
+
+        System.out.println(scores);
+
+        System.out.println("=========================================");
+
+        ArrayList<Character> list = new ArrayList<>();
+        list.add('A');
+        list.add('B');
+        list.add('C');
+        list.add('A');
+        list.add('D');
+        list.add('A');
+        list.add('A');
+        list.add('A');
+/*
+        for(int i = 0; i <= list.size()-1; i++){
+            char each = list.get(i);
+            if(each == 'A'){
+                list.set(i, 'E');
+            }
+        }
+*/
+
+        Collections.replaceAll(list, 'A', 'E');
+
+        System.out.println(list);
+
+
 
 
 
