@@ -40,7 +40,7 @@ public class WarmUp {
 
         System.out.println("============================================================");
 
-        int[] scores = {65, 75, 77, 85, 68, 88, 82, 72, 95, 99, 98};
+        int[] scores = {65, 75, 77, 85, 68, 88, 82, 72, 95, 99, 98, 94, 93, 96, 97, 71, 70, 72, 72, 73, 55};
 
         ArrayList<Integer> AList = new ArrayList<>();
         ArrayList<Integer> BList = new ArrayList<>();
@@ -49,18 +49,34 @@ public class WarmUp {
         ArrayList<Integer> FList = new ArrayList<>();
 
         for(int each : scores ){
-            if(each >= 90){
-                AList.add(each);
-            }else if(each >= 80){
-                BList.add(each);
-            }else if(each >= 70){
-                CList.add(each);
-            }else if(each >= 60){
-                DList.add(each);
-            }else{
-                FList.add(each);
+            if(each>=0 && each<= 100) { // if the score is valid
+                if (each >= 90) {
+                    AList.add(each);
+                } else if (each >= 80) {
+                    BList.add(each);
+                } else if (each >= 70) {
+                    CList.add(each);
+                } else if (each >= 60) {
+                    DList.add(each);
+                } else {
+                    FList.add(each);
+                }
             }
+
         }
+
+        System.out.println("total number of A: "+AList.size());
+        System.out.println("total number of B: "+BList.size());
+        System.out.println("total number of C: "+CList.size());
+        System.out.println("total number of D: "+DList.size());
+        System.out.println("total number of F: "+FList.size());
+
+        System.out.println("A: "+AList);
+        System.out.println("B: "+BList);
+        System.out.println("C: "+CList);
+        System.out.println("D: "+DList);
+        System.out.println("F: "+FList);
+
 
 
 
