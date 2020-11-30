@@ -78,6 +78,22 @@ public class CollectionUtility {
 
         System.out.println("frequencyOfE = " + frequencyOfE);
 
+        System.out.println("================================================");
+
+        ArrayList<Integer> nums = new ArrayList<>();
+        nums.add(100);
+        nums.add(1000);
+        nums.add(20);
+        nums.add(200);
+        nums.add(2000);
+        nums.add(10);
+
+        int max = Collections.max(nums);
+        int min = Collections.min(nums);
+
+        System.out.println("max = " + max);
+        System.out.println("min = " + min);
+
 
 
 
