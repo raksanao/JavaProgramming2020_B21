@@ -58,6 +58,9 @@ public class CollectionUtility {
         list.add('A');
         list.add('A');
         list.add('A');
+        list.add('A');
+        list.add('A');
+        list.add('A');
 /*
         for(int i = 0; i <= list.size()-1; i++){
             char each = list.get(i);
@@ -69,8 +72,11 @@ public class CollectionUtility {
 
         Collections.replaceAll(list, 'A', 'E');
 
-        System.out.println(list);
+        System.out.println(list); // [E, B, C, E, D, E, E, E]
+        
+        int frequencyOfE = Collections.frequency(list, 'E');
 
+        System.out.println("frequencyOfE = " + frequencyOfE);
 
 
 
