@@ -16,6 +16,16 @@ public class Uniques2 {
 
         System.out.println("=====================================");
 
+       String str = "aabaacdde";
+
+       ArrayList<String> list = new ArrayList<>( Arrays.asList(  str.split("")  )   );
+       list.removeIf(p -> Collections.frequency(list, p) > 1);
+
+       String result = list.toString().replace(", ", "").substring(1).replace("]","");
+        System.out.println(result);
+
+
+        System.out.println("================================================");
 
 
 
@@ -24,6 +34,11 @@ public class Uniques2 {
 }
 /*
 1. write a program that find the unique names from an arraylist of string
+
+						DO NOT USE:
+								for loop, for each loop, while loop, do while loop
+
+2. write a program that can remove the digits and letters from an array list of characters
 
 						DO NOT USE:
 								for loop, for each loop, while loop, do while loop
