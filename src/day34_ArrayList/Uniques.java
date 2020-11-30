@@ -14,7 +14,7 @@ public class Uniques {
 
         for(Character each : list ){
            if( Collections.frequency(list, each)  == 1){
-               System.out.print(each+" ");
+               System.out.print(each);
            }
         }
 
