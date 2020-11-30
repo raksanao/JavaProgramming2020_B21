@@ -26,7 +26,18 @@ public class Uniques2 {
 
 
         System.out.println("================================================");
+        ArrayList<Character> chars = new ArrayList<>();
+        chars.addAll(  Arrays.asList('a', '1', 'b', '2', 'c', 'd', '$', '#', '@', '?', '*') );
 
+        /*
+        chars.removeIf( p ->  Character.isDigit(p) );
+        chars.removeIf( p -> Character.isLetter(p) );
+        */
+
+        // chars.removeIf( p ->  Character.isDigit(p) || Character.isLetter(p));
+
+        chars.removeIf(p -> Character.isLetterOrDigit(p)) ;
+        System.out.println(chars);
 
 
     }
