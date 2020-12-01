@@ -21,12 +21,21 @@ public class Dog {
         color = dogColor;
         DOB = dogDOB;
         age = LocalDate.now().getYear() - DOB.getYear();
+        //  age   = current year  - bith year
     }
 
     // to print the info of the dog objects
     public void getInfo(){
         System.out.println("Name: "+nickName+", Breed: "+breed+", Gender: "+gender+", Color: "+color
                             +", Size: "+size+", Age: "+  age );
+    }
+
+    public void eat(String food){
+        System.out.println(nickName +" is eating "+food);
+    }
+
+    public void drink(String drink) {
+        System.out.println(nickName+" is drinking "+drink);
     }
 
 
