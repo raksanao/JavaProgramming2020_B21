@@ -39,7 +39,7 @@ public class ArrayListPractice1 {
         ArrayList<LocalDate> dates = new ArrayList<>( Arrays.asList(arr1) );
         dates.removeIf( p ->  p.isBefore(d1) );
 
-        DateTimeFormatter df = DateTimeFormatter.ofPattern("MMMM-dd-yyyy, EEEE");
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("MMM-dd-yyyy, EEE");
 
         for(LocalDate each : dates){
             System.out.println(each.format(df));
