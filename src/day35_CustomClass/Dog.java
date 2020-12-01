@@ -10,7 +10,9 @@ public class Dog {
     public char gender;
     public String color;
     public LocalDate DOB;
+    public int age;
 
+    // sets the instance variables of dog objects
     public void setInfo(String dogNickName, String dogBreed, String dogSize, char dogGender, String dogColor, LocalDate dogDOB){
         nickName = dogNickName;
         breed = dogBreed;
@@ -18,6 +20,13 @@ public class Dog {
         gender = dogGender;
         color = dogColor;
         DOB = dogDOB;
+        age = LocalDate.now().getYear() - DOB.getYear();
+    }
+
+    // to print the info of the dog objects
+    public void getInfo(){
+        System.out.println("Name: "+nickName+", Breed: "+breed+", Gender: "+gender+", Color: "+color
+                            +", Size: "+size+", Age: "+  age );
     }
 
 
