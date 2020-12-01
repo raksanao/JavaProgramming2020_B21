@@ -1,6 +1,8 @@
 package day35_CustomClass;
 
+import java.lang.reflect.Array;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.function.Predicate;
@@ -26,12 +28,22 @@ public class ArrayListPractice1 {
                 LocalDate.of(2013, 11, 23),
                 LocalDate.of(2014, 11, 23),
                 LocalDate.of(2015, 11, 23),
-                LocalDate.of(2016, 11, 23),
+                LocalDate.of(2016, 7, 23),
                 LocalDate.of(2017, 11, 23),
                 LocalDate.of(2018, 11, 23),
                 LocalDate.of(2019, 11, 23),
                 LocalDate.of(2020, 11, 23),
         };
+
+        LocalDate d1 = LocalDate.of(2016, 8, 15);
+        ArrayList<LocalDate> dates = new ArrayList<>( Arrays.asList(arr1) );
+        dates.removeIf( p ->  p.isBefore(d1) );
+
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("MMMM-dd-yyyy, EEEE");
+
+        for(LocalDate each : dates){
+            System.out.println(each.format(df));
+        }
 
 
 
