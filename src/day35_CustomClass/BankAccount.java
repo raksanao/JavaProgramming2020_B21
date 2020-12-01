@@ -1,5 +1,7 @@
 package day35_CustomClass;
 
+import java.time.LocalDate;
+
 public class BankAccount {
 
     public String accountName;
@@ -13,6 +15,7 @@ public class BankAccount {
 
     public void getInfo(){
         System.out.println("============================================");
+        System.out.println("Date: "+ LocalDate.now());
         System.out.println("Account Name: "+accountName);
         System.out.println("Account number: "+accountNumber);
         System.out.println("Available Balance: "+availableBalance);
