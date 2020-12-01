@@ -11,7 +11,7 @@ public class Car {
     public double price;
 
     public void setInfo(String carBrand, String carModel, String carColor, int carYear, double carPrice){ // Instance methods
-        brand = carBrand;
+        brand =  carBrand;
         model = carModel;
         color = carColor;
         year = carYear;
@@ -19,7 +19,7 @@ public class Car {
     }
 
     public void getInfo(){
-        System.out.println(year+" "+brand+" "+model+" "+color);
+        System.out.println(year+" "+brand+" "+model+" "+color+" $"+price);
     }
 
 }
