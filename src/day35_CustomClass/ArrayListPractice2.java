@@ -24,10 +24,19 @@ public class ArrayListPractice2 {
             numbers.addAll( Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,-1, -2, -3, -4, -1,0,1,2,3));
 
             // only keep the numbers 7, 8, 9
-            numbers.retainAll(  Arrays.asList(7, 8, 9)  );
-
+         numbers.retainAll(  Arrays.asList(7, 8, 9)  );
+      //      numbers.removeIf( p ->  !(p==7 || p==8 || p==9) );
 
         System.out.println(numbers);
+
+        ArrayList<Integer> numbers2 = new ArrayList<>();
+        numbers2.addAll( Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,-1, -2, -3, -4, -1,0,1,2,3));
+
+        // remove the elements that are less than 7
+        numbers2.removeIf( p -> p < 7);
+
+
+        System.out.println("==============================================");
 
 
 
