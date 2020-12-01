@@ -22,6 +22,16 @@ public class BankAccount {
         System.out.println("============================================");
     }
 
+    public void deposit(double amount){
+        availableBalance += amount;
+    }
 
+    public void withdraw(double amount){
+        availableBalance -= amount;
+    }
+
+    public void showBalance(){
+        System.out.println("As of today "+LocalDate.now()+" your available balance is: "+availableBalance);
+    }
 
 }
