@@ -25,10 +25,16 @@ public class CarObjects {
 
 
         Car car4 = new Car();
-        car4.setInfo("Mercedes", "C300");
+        car4.setInfo("Mercedes", "C300", "Red", 2018);
+
         System.out.println(car4.brand);
         System.out.println(car4.model);
+        System.out.println(car4.color);
+        System.out.println(car4.year);
 
+        // 2018 Mercedes C300 Red
+
+        System.out.println(  car4.year +" "+car4.brand +" " +car4.model+" "+car4.color );
 
 
 /*
