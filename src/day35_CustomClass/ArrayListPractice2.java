@@ -37,6 +37,25 @@ public class ArrayListPractice2 {
 
 
         System.out.println("==============================================");
+        ArrayList<Integer> list = new ArrayList<>();
+        list.addAll(Arrays.asList(1,2,3,4,5,6,7,8,100, 200, 300, 400, 500, 12, 130));
+
+        // soolution1:
+       // list.removeIf( p -> p > 100);
+
+        // solution 2:
+        ArrayList<Integer> temp = new ArrayList<>();
+
+        for( int each: list){
+            if(each <= 100){
+                temp.add(each);
+            }
+        }
+
+        list = temp;
+
+        System.out.println(list);
+
 
 
 
