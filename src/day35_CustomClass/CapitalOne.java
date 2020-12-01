@@ -27,6 +27,10 @@ public class CapitalOne {
 
         account2.deposit(200);
 
+        account1.deposit(3000);
+        account1.withdraw(50000);
+
+        account1.showBalance();
         account2.showBalance();
 
 
