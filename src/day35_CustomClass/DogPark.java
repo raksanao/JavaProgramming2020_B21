@@ -33,8 +33,11 @@ public class DogPark {
 
         dog2.drink("Beer");
 
+        dog4.setInfo("Misha", "husky", "big", 'M',
+                "chocolate", LocalDate.of(2015, 06, 14));
 
-        Dog[] dogs = {dog1, dog2, dog3};
+
+        Dog[] dogs = {dog1, dog2, dog3, dog4};
 
         ArrayList<Dog> huskies = new ArrayList<>();
         ArrayList<Dog> Maltese = new ArrayList<>();
