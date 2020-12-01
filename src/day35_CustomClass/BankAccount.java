@@ -18,7 +18,7 @@ public class BankAccount {
         System.out.println("Date: "+ LocalDate.now());
         System.out.println("Account Name: "+accountName);
         System.out.println("Account number: "+accountNumber);
-        System.out.println("Available Balance: "+availableBalance);
+        System.out.println("Available Balance: $"+availableBalance);
         System.out.println("============================================");
     }
 
@@ -31,7 +31,7 @@ public class BankAccount {
     }
 
     public void showBalance(){
-        System.out.println("As of today "+LocalDate.now()+" your available balance is: "+availableBalance);
+        System.out.println("As of today "+LocalDate.now()+", "+accountName+"'  available balance is: $"+availableBalance);
     }
 
 }
