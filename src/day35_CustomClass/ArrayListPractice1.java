@@ -1,9 +1,38 @@
 package day35_CustomClass;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.function.Predicate;
+
 public class ArrayListPractice1 {
 
     public static void main(String[] args) {
         String[] countryNames = {"Andorra","United Arab Emirates","Afghanistan","Turkey","United States"," Antigua and Barbuda","Albania", "Colombia", "Venezuela", "Panama","United Kingdom", "Mexico ", "United States"};
+
+        ArrayList<String> countries = new ArrayList<>(  Arrays.asList(countryNames)  );
+        System.out.println(countries);
+
+    //    Predicate<String> length10 = p ->  p.length() >= 10;
+
+        countries.removeIf( p ->  p.length() >= 10 );
+
+        System.out.println(countries);
+
+        System.out.println("====================================================");
+        LocalDate[] arr1 = {
+                LocalDate.of(2010, 11, 23),
+                LocalDate.of(2012, 11, 23),
+                LocalDate.of(2013, 11, 23),
+                LocalDate.of(2014, 11, 23),
+                LocalDate.of(2015, 11, 23),
+                LocalDate.of(2016, 11, 23),
+                LocalDate.of(2017, 11, 23),
+                LocalDate.of(2018, 11, 23),
+                LocalDate.of(2019, 11, 23),
+                LocalDate.of(2020, 11, 23),
+        };
+
 
 
     }
