@@ -57,7 +57,7 @@ public class ArrayListPractice1 {
         System.out.println( list1.equals(list2)); // true
 
         ArrayList<Integer> list3 = new ArrayList<>();
-        list3.addAll(Arrays.asList(-1,-3,-4,-2,-5));
+        list3.addAll(Arrays.asList(-1,-3,-4,-2,-5)); // -15
 
         System.out.println( list2.equals(list3));
 
@@ -80,10 +80,8 @@ ArrayList methods:
 		set
 		contains
 		clear
-		equals
+		equals (&&)
 		addAll
-		removeAll
-		retainAll
-		removeIf
+
 
  */
