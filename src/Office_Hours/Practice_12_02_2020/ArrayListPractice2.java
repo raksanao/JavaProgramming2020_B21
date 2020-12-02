@@ -38,4 +38,7 @@ public class ArrayListPractice2 {
 		removeAll:
 		retainAll:
 		removeIf:
+
+
+		remover(): cannot be used inside loop with out Iterable
  */
