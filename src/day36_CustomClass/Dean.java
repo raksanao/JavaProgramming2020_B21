@@ -26,11 +26,40 @@ public class Dean { // Dean HAS An Offer
         System.out.println("===========================================================");
         // only print the offers from VA
 
+
+
         for(Offer each : offers){
-
+            if(each.location.equals("VA") && each.salary >= 110000 && each.jobTitle.equals("SDET")){
+                each.getInfo();
+            }
         }
+        System.out.println("=============================================================");
 
+        ArrayList<Offer> localOffers = new ArrayList<>( offers );
+        localOffers.removeIf( p -> !p.location.equals("VA") );  // retain if the offer is from VA
 
+        System.out.println("VA offers: "+localOffers.size());
+
+        System.out.println("=============================================================");
+
+        ArrayList<Offer> SDETOffers = new ArrayList<>( offers );
+        SDETOffers.removeIf( p -> !p.jobTitle.equals("SDET")); // retain if the offer is for SDET
+
+        System.out.println("SDET Offers: "+SDETOffers.size());
+
+        System.out.println("==============================================================");
+
+        ArrayList<Offer> goodSalary = new ArrayList<>(offers);
+        goodSalary.removeIf( p -> p.salary < 120000); // removes all offers that has salary less than 120k
+
+        System.out.println("$120k or more: "+goodSalary.size());
+
+        System.out.println("===============================================================");
+
+        ArrayList<Offer> fullTime = new ArrayList<>(offers);
+        fullTime.removeIf( p -> !p.isFullTime);
+
+        System.out.println("Full time: "+fullTime.size());
 
 
     }
