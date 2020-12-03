@@ -21,10 +21,16 @@ public class Employee {
 
     public void getInfo(){
         System.out.println("Name: "+name+", Gender: "+gender+", ID: "+ID+", Company Name: "+companyName
-                            +", Job Title: "+jobTitle);
+                            +", Job Title: "+jobTitle+", salary: "+salary+", Hired: "+hireDate);
     }
 
+    public void working(){
+        System.out.println( name+" is working");
+    }
 
+    public void meeting(){
+        System.out.println(name+" is in a meeting");
+    }
 
 
 }
