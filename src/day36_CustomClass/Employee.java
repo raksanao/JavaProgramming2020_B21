@@ -22,7 +22,7 @@ public class Employee {
     }
 
     public void getInfo(){
-        DateTimeFormatter df = DateTimeFormatter.ofPattern("MMM-dd-yyyy");
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("MMMM-dd-yyyy");
         DecimalFormat decimal = new DecimalFormat("0.00");
         System.out.println("Name: "+name+", Gender: "+gender+", ID: "+ID+", Company Name: "+companyName
                             +", Job Title: "+jobTitle+", salary: $"+ decimal.format(salary)+", Hired: "+hireDate.format(df) );
