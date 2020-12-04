@@ -93,7 +93,19 @@ public class CybertekSchool { // Has A
         System.out.println("Lowest GPA: "+lowestGPA);
 
         System.out.println("=================================================================");
+        ArrayList<Student> femaleStudents = new ArrayList<>(cybertekStudents);
+        femaleStudents.removeIf( p ->  p.gender == 'M'  ); // removes the students from femaleStudents list if the student is Male
 
+        System.out.println(femaleStudents);
+
+        ArrayList<Student> maleStudents = new ArrayList<>(cybertekStudents);
+        maleStudents.removeIf( p -> p.gender =='F');
+
+        System.out.println(maleStudents);
+
+
+        System.out.println("Total number of male students: "+maleStudents.size());
+        System.out.println("Total Number of female students: "+femaleStudents.size());
 
 
 
