@@ -1,14 +1,17 @@
 package day37_CustomClass;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CybertekSchool { // Has A
 
     public static void main(String[] args) {
 
+
         Student student1 = new Student();
         Student student2 = new Student();
-        Student student3 = new Student();
+        Student student3 =new Student();
         Student student4 = new Student();
         Student student5 = new Student();
         Student student6 = new Student();
@@ -27,6 +30,23 @@ public class CybertekSchool { // Has A
         student8.setInfo("Bob", 'M', LocalDate.of(1989, 6,29), "Y45", 1.3);
         student9.setInfo("John", 'M', LocalDate.of(2001, 7,12), "L05", 1.3);
         student10.setInfo("Sanya", 'M', LocalDate.of(1990, 3,29), "P93", 3.9);
+
+        ArrayList<Student> cybertekStudents = new ArrayList<>();
+        cybertekStudents.addAll(Arrays.asList(  student1, student2, student3, student4, student5, student6, student7,
+                student8, student9, student10));
+
+
+        Student student11 = new Student();
+        student11.setInfo("Mike", 'F', LocalDate.of(1990, 9, 6), "M562", 2.8);
+        Student student12 = new Student();
+        student12.setInfo("Lily", 'F', LocalDate.of(1997, 12, 12), "L093", 4.4);
+
+        System.out.println(cybertekStudents);
+
+
+
+
+
 
 
 
