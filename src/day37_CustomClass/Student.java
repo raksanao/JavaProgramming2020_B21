@@ -10,6 +10,8 @@ public class Student {
     public char gender;
     public double gpa;
 
+    // ==
+
     public void setInfo(String name, char gender, LocalDate DOfB, String ID, double gpa){
        this.name  = name;
        this.gender =gender;
