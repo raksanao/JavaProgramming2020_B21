@@ -21,7 +21,7 @@ public class CybertekSchool { // Has A
         Student student10 = new Student();
 
         student1.setInfo("Aaron", 'M', LocalDate.of(2000,11,2), "A01", 1.5);
-        student2.setInfo("Daniel", 'M', LocalDate.of(1990, 10, 25), "B123", 3.2);
+        student2.setInfo("Daniel", 'M', LocalDate.of(1998, 10, 25), "B123", 3.2);
         student3.setInfo("Vanya", 'M', LocalDate.of(1998, 10, 12), "C324", 3.3);
         student4.setInfo("Jessica", 'F', LocalDate.of(1999, 8,19), "G345", 5.3);
         student5.setInfo("Jennifer", 'F', LocalDate.of(1990, 12,13), "F435", 2.3);
@@ -41,7 +41,39 @@ public class CybertekSchool { // Has A
         Student student12 = new Student();
         student12.setInfo("Lily", 'F', LocalDate.of(1997, 12, 12), "L093", 4.4);
 
+
+        cybertekStudents.addAll( Arrays.asList( student11, student12));
+
+
         System.out.println(cybertekStudents);
+
+        System.out.println("===================================================================");
+        // for finding the youngest && oldest student
+        LocalDate youngest = cybertekStudents.get(0).DOfB; // 1998
+        LocalDate oldest = cybertekStudents.get(0).DOfB;
+
+        Student youngestStudent = null ;  // null: is default value of all non primitives
+        Student oldestStudent = null;
+
+        for(Student each : cybertekStudents){
+            if( each.DOfB.isAfter(youngest)  ){  // whichgever students Date of bith is after the current youngest student's date of both
+                youngest = each.DOfB;
+                youngestStudent = each;
+            }
+
+            if( each.DOfB.isBefore(oldest)  ){
+                oldest =  each.DOfB;
+                oldestStudent = each;
+            }
+
+
+        }
+
+        System.out.println(youngest);
+        System.out.println(youngestStudent);
+
+        System.out.println(oldest);
+        System.out.println(oldestStudent);
 
 
 
