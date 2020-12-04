@@ -24,8 +24,20 @@ public class StudentObjects {
         student2.setInfo("Daniel", 'M', LocalDate.of(1990, 10, 25), "B123", 3.2);
 
         // student2.getInfo();
+        System.out.println( student2  );
 
-        System.out.println( student2 );
+        System.out.println("=========================================================");
+
+        Student student3 = new Student();
+        student3.setInfo("Mary", 'F', LocalDate.of(1995, 9, 5), "C456", 3.8 );
+
+        System.out.println(student3);
+
+        System.out.println("=========================================================");
+
+        ArrayList<Student> studentList = new ArrayList<>( Arrays.asList(student1, student2, student3) );
+
+        System.out.println( studentList );
 
 
     }

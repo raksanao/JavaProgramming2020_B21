@@ -21,14 +21,14 @@ public class Student {
 
 
     public String toString() {
-        return
-                "name= " + name +
-                ", ID= " + ID +
-                ", DOfB " + DOfB +
-                ", age " + age +
-                ", gender " + gender +
-                ", gpa " + gpa ;
-
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", ID='" + ID + '\'' +
+                ", DOfB=" + DOfB +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", gpa=" + gpa +
+                '}';
     }
 
 
