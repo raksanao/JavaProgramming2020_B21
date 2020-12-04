@@ -2,6 +2,7 @@ package day37_CustomClass;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ParkingLot { // HAS A
 
@@ -45,6 +46,14 @@ public class ParkingLot { // HAS A
         System.out.println(recall2);
 
         System.out.println("==============================");
+
+        ArrayList<Car> myCollection = new ArrayList<>();
+        myCollection.addAll(Arrays.asList(cars) );
+
+        myCollection.removeIf(p -> !( p.brand.equals("BMW") && p.model.equals("m4") ) );
+                    // remove all the cars that are NOT BMW m4
+
+        System.out.println(myCollection);
 
 
 
