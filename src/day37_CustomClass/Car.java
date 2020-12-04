@@ -19,7 +19,6 @@ public class Car {
         year = DOfB.getYear();
     }
 
-
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
@@ -32,5 +31,26 @@ public class Car {
                 '}';
     }
 
+    public void driver(){
+        System.out.println("Driving "+brand+" "+model);
+    }
+
 
 }
+
+/*
+Circle:
+    radius
+    PI
+    diameter
+    area
+    perimeter
+
+    methods:
+        setInfo
+        toString
+        calculateArea , return double
+        calculatePerimeter, return double
+
+
+ */
