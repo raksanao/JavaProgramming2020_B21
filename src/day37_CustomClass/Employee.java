@@ -25,10 +25,16 @@ public class Employee {
         return calculateSalary() * stateTaxRate +  calculateSalary() *federalTaxRate;
     }
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", company='" + company + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", gender='" + gender + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
 
 /*
