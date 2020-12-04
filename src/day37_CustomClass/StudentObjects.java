@@ -39,6 +39,22 @@ public class StudentObjects {
 
         System.out.println( studentList );
 
+        System.out.println("==========================================================");
+
+        Student[] students = {student1, student2, student3};
+
+        System.out.println(  Arrays.toString( students ) );
+
+        System.out.println("===========================================================");
+        // find the student who has ID of C456
+
+        for (Student each : students){
+            if( each.ID.equals("A01") ){
+                System.out.println(each);
+            }
+        }
+
+
 
     }
 
