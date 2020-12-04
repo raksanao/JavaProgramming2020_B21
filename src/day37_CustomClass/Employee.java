@@ -4,9 +4,9 @@ public class Employee {
 
     public String name, company, jobTitle, ID, gender;
     public int weeklyHours;
-    public double hourlyRate, salary, totalTax, salaryAfterTax;
+    public double hourlyRate, salary;
 
-    public Employee(String name, String company, String jobTitle, String ID, String gender, int weeklyHours, double hourlyRate) {
+    public void setInfo(String name, String company, String jobTitle, String ID, String gender, int weeklyHours, double hourlyRate) {
         this.name = name;
         this.company = company;
         this.jobTitle = jobTitle;
@@ -24,11 +24,6 @@ public class Employee {
     public double calculateTax(double stateTaxRate, double federalTaxRate){
         return calculateSalary() * stateTaxRate +  calculateSalary() *federalTaxRate;
     }
-
-    public double calculateSalaryAfterTax(){
-        return salary - totalTax;
-    }
-
 
 
 
