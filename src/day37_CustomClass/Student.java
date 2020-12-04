@@ -3,6 +3,7 @@ package day37_CustomClass;
 import java.time.LocalDate;
 
 public class Student {
+
     public String name, ID;
     public LocalDate DOfB;
     public int age;
@@ -21,8 +22,6 @@ public class Student {
     public void getInfo(){
         System.out.println("Student name : " + name + "\nStudent ID   : " + ID + "\ngpa: " + gpa + "\nAge: " + age + "\nGender: " + gender);
     }
-
-
 
 
 }
