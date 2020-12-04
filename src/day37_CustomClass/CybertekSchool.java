@@ -53,7 +53,8 @@ public class CybertekSchool { // Has A
         LocalDate oldest = cybertekStudents.get(0).DOfB;
 
         Student youngestStudent = null ;  // null: is default value of all non primitives
-        Student oldestStudent = null;
+        Student oldestStudent = null;   // null: is default value of all non primitives
+
 
         for(Student each : cybertekStudents){
             if( each.DOfB.isAfter(youngest)  ){  // whichgever students Date of bith is after the current youngest student's date of both
@@ -74,6 +75,26 @@ public class CybertekSchool { // Has A
 
         System.out.println(oldest);
         System.out.println(oldestStudent);
+
+        System.out.println("================================================================");
+        // find highest gpa and lowest gpa
+        double highestGPA = cybertekStudents.get(0).gpa;
+        double lowestGPA = cybertekStudents.get(0).gpa;
+
+        for (Student eachStudent : cybertekStudents){
+            double eachGPA = eachStudent.gpa;
+             highestGPA =Math.max(eachGPA, highestGPA);
+             lowestGPA  = Math.min(eachGPA, lowestGPA);
+
+        }
+
+
+        System.out.println("Highest GPA: "+highestGPA);
+        System.out.println("Lowest GPA: "+lowestGPA);
+
+        System.out.println("=================================================================");
+
+
 
 
 
