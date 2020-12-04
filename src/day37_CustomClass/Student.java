@@ -19,8 +19,16 @@ public class Student {
        this.gpa = gpa;
     }
 
-    public void getInfo(){
-        System.out.println("Student name : " + name + "\nStudent ID   : " + ID + "\ngpa: " + gpa + "\nAge: " + age + "\nGender: " + gender);
+
+    public String toString() {
+        return
+                "name= " + name +
+                ", ID= " + ID +
+                ", DOfB " + DOfB +
+                ", age " + age +
+                ", gender " + gender +
+                ", gpa " + gpa ;
+
     }
 
 
@@ -33,6 +41,13 @@ public class Student {
                 setInfo
                 getInfo
                 study
+
+
+    toString methods: gets executed auotomatically when you pass the object in print statement
+
+				  instance return method, String
+
+				  No argument
 
 
  */
