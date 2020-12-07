@@ -11,7 +11,6 @@ public class SalaryCalculator {
         this.federalTaxRate = (federalTaxRate > 1) ? federalTaxRate/ 100 : federalTaxRate;
         salary = calculateSalary();
         salaryAfterTax = calculateSalaryAfterTax();
-
     }
 
     public double calculateSalary(){
@@ -34,7 +33,14 @@ public class SalaryCalculator {
         return salary - calculateTotalTax();
     }
 
-
+    @Override
+    public String toString() {
+        return "SalaryCalculator{" +
+                "hourlyRate=" + hourlyRate +
+                ", salary=" + salary +
+                ", salaryAfterTax=" + salaryAfterTax +
+                '}';
+    }
 
 }
 
