@@ -1,5 +1,8 @@
 package day38_Statics.ScrumTask;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MyScrumTeam {
 
     public static void main(String[] args) {
@@ -97,6 +100,57 @@ public class MyScrumTeam {
 
         System.out.println("Testers: "+countTesters);
         System.out.println("Developers: "+countDevelopers);
+
+        System.out.println("=================================================");
+        //    ScrumTeam[] scrums = {scrum1, scrum2};
+
+        scrums[0].SM = "Aihait";
+        scrums[1].SM = "Aysel";
+
+        System.out.println( scrums[0] );
+        System.out.println(scrums[1]);
+
+        System.out.println("===============================================");
+        ArrayList<ScrumTeam> scrumList = new ArrayList<>();
+
+        scrumList.addAll(Arrays.asList(scrums) );
+
+        for(ScrumTeam  eachScrum  : scrumList){
+            for(Tester eachTester: eachScrum.testersTeam ){
+                System.out.println(eachTester.name +" : "+eachTester.salary);
+            }
+
+            for( Developer eachDeveloper: eachScrum.developersTeam){
+                System.out.println(eachDeveloper.name+" : "+eachDeveloper.salary);
+            }
+
+        }
+
+
+        /*
+        for( int i = 0; i <= scrumList.size()-1; i++){
+                 ScrumTeam eachTeam =   scrumList.get(i);
+
+                 for(int j =0; j <= eachTeam.testersTeam.size()-1; j++ ){ // j is index nm of Testers
+                       Tester eachTester = eachTeam.testersTeam.get(j);
+                     System.out.println( eachTester.name +" : "+eachTester.salary );
+                 }
+
+                for(int k = 0; k <= eachTeam.developersTeam.size()-1; k++){ // k is index nm of developers
+                       Developer eachDeveloper    = eachTeam.developersTeam.get(k);
+                    System.out.println(eachDeveloper.name +" : "+eachDeveloper.salary);
+                }
+        }
+
+         */
+
+
+
+
+
+
+
+
 
 
 
