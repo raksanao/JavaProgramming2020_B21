@@ -24,6 +24,16 @@ public class Tester {
     }
 
 
+    public String toString() {
+        return "Tester{" +
+                "name='" + name + '\'' +
+                ", ID='" + ID + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", companyName='" + companyName + '\'' +
+                ", salary=" + salary +
+                ", gender=" + gender +
+                '}';
+    }
 
 }
 
