@@ -5,9 +5,9 @@ import java.util.Arrays;
 
 public class ScrumTeam {
 
-    public String PO, BA, SM;
-    public ArrayList<Tester> testersTeam = new ArrayList<>();
-    public ArrayList<Developer> developersTeam = new ArrayList<>();
+    public  String PO, BA, SM;
+    public  ArrayList<Tester> testersTeam = new ArrayList<>();
+    public  ArrayList<Developer> developersTeam = new ArrayList<>();
 
     public static boolean hasSprint = true;
     public static boolean  hasMeeting = true;

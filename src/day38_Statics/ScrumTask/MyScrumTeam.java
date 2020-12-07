@@ -26,8 +26,38 @@ public class MyScrumTeam {
         Developer[] developers = {developer1, developer2, developer3, developer4};
 
         ScrumTeam scrum1 = new ScrumTeam();
+        scrum1.setInfo("Yalcin", "Bektemir", "Elvira");
         scrum1.addTester(tester1);
         scrum1.addTester(testers);
+        scrum1.addDeveloper(developers);
+
+        System.out.println(scrum1);
+
+        for(Developer each   : scrum1.developersTeam ){
+            System.out.println(each);
+        }
+
+        for(Tester each  : scrum1.testersTeam ){
+            System.out.println(each);
+        }
+
+        System.out.println("==================================");
+       Tester tester4 = new Tester();
+       Tester tester5 = new Tester();
+        tester4.setInfo("Asuman","GR-24","SDET","Javaholics", 170000,'F');
+        tester5.setInfo("Ercan","GR-24","SDET","Javaholics", 170000,'M');
+
+       Developer developer5 = new Developer();
+       Developer developer6 = new Developer();
+        developer5.setInfo("ALtynai","GR-24","Full-Stack Developer","Javaholics", 180000,'F');
+        developer6.setInfo("Shardae","GR-24","Full-Stack Developer","Javaholics", 170000,'F');
+
+        ScrumTeam scrum2 = new ScrumTeam();
+        System.out.println(scrum2);
+
+
+
+
 
 
 
