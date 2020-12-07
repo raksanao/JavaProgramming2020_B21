@@ -53,9 +53,50 @@ public class MyScrumTeam {
         developer6.setInfo("Shardae","GR-24","Full-Stack Developer","Javaholics", 170000,'F');
 
         ScrumTeam scrum2 = new ScrumTeam();
+        scrum2.addTester(tester4);
+        scrum2.addTester(tester5);
+        scrum2.addDeveloper(developer5);
+        scrum2.addDeveloper(developer6);
+
+        scrum2.setInfo("Svetlana", "Daniel", "Mayasa");
+
+       // scrum1.removeDeveloper("Y-821");
+      //  scrum1.removeTester("0006");
+
+        System.out.println(scrum1);
         System.out.println(scrum2);
 
+        System.out.println("=================================================");
 
+        ScrumTeam[] scrums = {scrum1, scrum2};
+
+        // print the names & salary of every single testers
+
+        for(ScrumTeam eachScrum : scrums ){
+            for(Tester eachTester    : eachScrum.testersTeam  ){
+                System.out.println( eachTester.name  +" : $"+eachTester.salary);
+            }
+        }
+
+        System.out.println("===================================================");
+        // print the names & salary of every single developers
+        for(ScrumTeam eachScrum : scrums ){
+            for(Developer eachDeveloper    : eachScrum.developersTeam  ){
+                System.out.println( eachDeveloper.name  +" : $"+eachDeveloper.salary);
+            }
+        }
+
+        System.out.println("===============================================");
+        int countDevelopers = 0;
+        int countTesters = 0;
+
+        for(ScrumTeam each : scrums ){
+            countTesters += each.testersTeam.size();
+            countDevelopers += each.developersTeam.size();
+        }
+
+        System.out.println("Testers: "+countTesters);
+        System.out.println("Developers: "+countDevelopers);
 
 
 
