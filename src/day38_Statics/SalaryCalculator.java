@@ -33,14 +33,19 @@ public class SalaryCalculator {
         return salary - calculateTotalTax();
     }
 
-    @Override
+
     public String toString() {
         return "SalaryCalculator{" +
-                "hourlyRate=" + hourlyRate +
-                ", salary=" + salary +
-                ", salaryAfterTax=" + salaryAfterTax +
+                "hourlyRate= $" + hourlyRate +
+                ", salary= $" + salary +
+                ", salaryAfterTax= $" + salaryAfterTax +
                 '}';
     }
+
+    public boolean equals(SalaryCalculator s1){
+           return    this.salary == s1.salary;
+    }
+
 
 }
 
