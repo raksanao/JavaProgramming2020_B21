@@ -22,6 +22,13 @@ public class MyScrumTeam {
         tester2.setInfo("Dean","0006","Tester","Cybertek",98500,'M');
         tester3.setInfo("Jair","0007","Tester","Cybertek",99000,'M');
 
+        Tester[] testers= {tester2, tester3};
+        Developer[] developers = {developer1, developer2, developer3, developer4};
+
+        ScrumTeam scrum1 = new ScrumTeam();
+        scrum1.addTester(tester1);
+        scrum1.addTester(testers);
+
 
 
     }
