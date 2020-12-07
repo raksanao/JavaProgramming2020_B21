@@ -18,7 +18,7 @@ public class CybertekStudent {
         System.out.println("School is: "+schoolName);
     }
 
-    @Override
+
     public String toString() {
         return "CybertekStudent{" +
                 "name='" + name + '\'' +
