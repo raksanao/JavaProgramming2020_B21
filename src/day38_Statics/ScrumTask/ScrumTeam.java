@@ -42,6 +42,11 @@ public class ScrumTeam {
         developersTeam.removeIf( p -> p.ID.equalsIgnoreCase( ID) );
     }
 
+    public String toString(){
+        return "PO: "+PO+", BA: "+BA+", SM: "+SM+", Total Numbers of Testers: "+testersTeam.size()
+                +", Total Number of Developers: "+developersTeam.size();
+    }
+
 
 
 }
