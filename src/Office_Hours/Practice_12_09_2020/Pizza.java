@@ -11,10 +11,9 @@ public class Pizza {
         this.pepperoniTopping = pepperoniTopping;
 
         priceOfPizza = calcCost();
-        tips = tips/100; //  converting percentage to decimal
+       // tips = tips/100; //  converting percentage to decimal
 
-        this.tips = tips * priceOfPizza;
-
+        this.tips = tips/100 * priceOfPizza;
         totalPrice = priceOfPizza +  this.tips;
 
     }
@@ -30,9 +29,16 @@ public class Pizza {
     }
 
 
-
-
-
+    public String toString() {
+        return "Pizza{" +
+                "size='" + size + '\'' +
+                ", cheeseTopping=" + cheeseTopping +
+                ", pepperoniTopping=" + pepperoniTopping +
+                ", priceOfPizza=" + priceOfPizza +
+                ", tips=" + tips +
+                ", totalPrice=" + totalPrice +
+                '}';
+    }
 
 
 }
