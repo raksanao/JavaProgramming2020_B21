@@ -16,7 +16,7 @@ public class CybertekStudent {
 
         public String toString(){
                 return "Name: "+name+", Age: "+age +", GenderL: "+gender+", School Name: "+schoolName
-                        +", Has Repl.it: "+hasReplIt+", Has FlipGrid: "+hasFlipGrid+", dream job"+dreamJob;
+                        +", Has Repl.it: "+hasReplIt+", Has FlipGrid: "+hasFlipGrid+", dream job: "+dreamJob;
         }
 
 
