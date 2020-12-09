@@ -14,7 +14,7 @@ public class Pizza {
        // tips = tips/100; //  converting percentage to decimal
 
         this.tips = tips/100 * priceOfPizza;
-        totalPrice = priceOfPizza +  this.tips;
+        totalPrice = priceOfPizza +  this.tips + (priceOfPizza * 0.08); // including tax
 
     }
 
