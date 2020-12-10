@@ -12,6 +12,14 @@ public class Carpet {
         this.isPersian = isPersian;
     }
 
+    public double  calcCost(){
+        double totalPrice = (width*length)*unitPrice;
+        if(isPersian){
+            totalPrice += 200;
+        }
+        return totalPrice;
+       // return  (isPersian)? totalPrice +=200 : totalPrice ;
+    }
 
 
 }
