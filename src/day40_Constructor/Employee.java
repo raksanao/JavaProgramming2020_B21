@@ -15,10 +15,14 @@ public class Employee {
     }
 
 
-
-
-
-
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", ID='" + ID + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
 
 /*
