@@ -14,6 +14,16 @@ public class Employee {
         this.jobTitle = jobTitle;
     }
 
+    public Employee(String name, String jobTitle, String ID) {
+        this(name, jobTitle);
+        this.ID = ID;
+    }
+
+   public Employee(String name, String jobTitle, String ID, double salary) {
+        this(name, jobTitle, ID);
+        this.salary = salary;
+   }
+
 
     public String toString() {
         return "Employee{" +
