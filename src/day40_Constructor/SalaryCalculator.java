@@ -8,8 +8,15 @@ public class SalaryCalculator {
         numberOfWorkingDays = 5;
         numberOfWeeks = 52;
     }
-
+ //                                                                          8                  20
+//                                                                          0.08                0.2
     public SalaryCalculator(double weeklyHours, double hourlyRate, double stateTaxRate, double federalTaxRate) {
+        if(stateTaxRate > 1){
+           stateTaxRate /= 100;
+        }
+        if(federalTaxRate > 1){
+            federalTaxRate /= 100;
+        }
         this.weeklyHours = weeklyHours;
         this.hourlyRate = hourlyRate;
         this.stateTaxRate = stateTaxRate;
@@ -17,7 +24,6 @@ public class SalaryCalculator {
         salary = weeklyHours * hourlyRate * numberOfWeeks;
         totalTax = (stateTaxRate + federalTaxRate) * salary;
         salaryAfterTax = salary - totalTax;
-
     }
 
 
