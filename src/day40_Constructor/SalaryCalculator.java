@@ -27,7 +27,16 @@ public class SalaryCalculator {
     }
 
 
-
-
+    public String toString() {
+        return "SalaryCalculator{" +
+                "weeklyHours=" + weeklyHours +
+                ", hourlyRate=" + hourlyRate +
+                ", stateTaxRate=" + stateTaxRate +
+                ", federalTaxRate=" + federalTaxRate +
+                ", salary=" + salary +
+                ", salaryAfterTax=" + salaryAfterTax +
+                ", totalTax=" + totalTax +
+                '}';
+    }
 
 }
