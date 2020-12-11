@@ -1,5 +1,7 @@
 package day40_Constructor;
 
+import java.text.DecimalFormat;
+
 public class SalaryCalculator {
     public static int numberOfWorkingDays, numberOfWeeks;
     public double weeklyHours, hourlyRate, stateTaxRate, federalTaxRate, salary, salaryAfterTax, totalTax;
@@ -8,6 +10,7 @@ public class SalaryCalculator {
         numberOfWorkingDays = 5;
         numberOfWeeks = 52;
     }
+    // 7.8888888     7.9
  //                                                                          8                  20
 //                                                                          0.08                0.2
     public SalaryCalculator(double weeklyHours, double hourlyRate, double stateTaxRate, double federalTaxRate) {
@@ -26,16 +29,16 @@ public class SalaryCalculator {
         salaryAfterTax = salary - totalTax;
     }
 
-
     public String toString() {
+        DecimalFormat df = new DecimalFormat("0.00");
         return "SalaryCalculator{" +
-                "weeklyHours=" + weeklyHours +
-                ", hourlyRate=" + hourlyRate +
-                ", stateTaxRate=" + stateTaxRate +
-                ", federalTaxRate=" + federalTaxRate +
-                ", salary=" + salary +
-                ", salaryAfterTax=" + salaryAfterTax +
-                ", totalTax=" + totalTax +
+                "weeklyHours= " + weeklyHours +
+                ", hourlyRate= $" + hourlyRate +
+                ", stateTaxRate= " + stateTaxRate +
+                ", federalTaxRate= " + federalTaxRate +
+                ", salary= $" + df.format(salary) +
+                ", salaryAfterTax= $" + df.format(salaryAfterTax) +
+                ", totalTax= $" + df.format(totalTax) +
                 '}';
     }
 
