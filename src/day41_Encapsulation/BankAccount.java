@@ -45,7 +45,7 @@ public class BankAccount {
 
     public void deposit(double amount){
         if(amount < 0){
-            System.out.println("Invalid number");
+            System.out.println("Invalid number: "+amount);
             return;
         }
 
