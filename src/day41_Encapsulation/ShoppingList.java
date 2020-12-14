@@ -27,6 +27,7 @@ public class ShoppingList {
         }
 
 
+
         System.out.println("total = " + total);
 
 
