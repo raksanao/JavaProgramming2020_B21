@@ -9,7 +9,9 @@ public class Test {
 
         Data obj = new Data();
 
-
+        Data.publicMethod();
+      //  Data.privateMethod();
+        Data.defaultMethod();
 
     }
 
