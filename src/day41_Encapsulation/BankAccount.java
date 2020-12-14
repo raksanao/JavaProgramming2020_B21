@@ -3,11 +3,21 @@ package day41_Encapsulation;
 public class BankAccount {
 
     public final static String bankName = "Bank Of America";
+
     public String firstName, lastName;
 
     private String accountHolder;
     private int accountNumber;
     private double balance;
+
+    public BankAccount(String firstName, String lastName, int accountNumber){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        setAccountHolder(firstName, lastName);
+        setAccountNumber(accountNumber);
+    }
+
+
 
     public String getAccountHolder() {
         return accountHolder;
@@ -21,14 +31,20 @@ public class BankAccount {
         return balance;
     }
 
+
     public void setAccountHolder(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
         accountHolder = firstName.toUpperCase()+" "+lastName.toUpperCase();
     }
 
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 
 }
 
