@@ -8,5 +8,9 @@ public class Data {
 
     // protected static String protectedVariable = "D";
 
+    Data(){
+
+    }
+
 
 }
