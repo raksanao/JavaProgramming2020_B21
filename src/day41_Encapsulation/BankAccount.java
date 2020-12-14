@@ -64,7 +64,7 @@ public class BankAccount {
     }
 
     public void availableBalance(){
-        System.out.println("Available Balance of "+ getAccountNumber() +" is: $"+getBalance());
+        System.out.println("Available Balance of the account# "+ getAccountNumber() +" is: $"+getBalance());
     }
 
 
