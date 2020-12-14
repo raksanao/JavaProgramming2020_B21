@@ -5,7 +5,6 @@ public class Credentials {
     private String userName = "cybertek";
     private double passWord = 1234;
 
-
     public String getUserName() {
         return userName;
     }
@@ -27,7 +26,6 @@ public class Credentials {
     public void setPassWord(double passWord){
         this.passWord = passWord;
     }
-
 
 
 }
