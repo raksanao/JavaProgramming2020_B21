@@ -15,7 +15,6 @@ public class Item {
         return quantity * unitPrice;
     }
 
-
     public String toString() {
         return "Item{" +
                 "name ='" + name + '\'' +
