@@ -17,8 +17,6 @@ public class BankAccount {
         setAccountNumber(accountNumber);
     }
 
-
-
     public String getAccountHolder() {
         return accountHolder;
     }
@@ -30,7 +28,6 @@ public class BankAccount {
     public double getBalance() {
         return balance;
     }
-
 
     public void setAccountHolder(String firstName, String lastName){
         this.firstName = firstName;
@@ -45,6 +42,32 @@ public class BankAccount {
     public void setBalance(double balance) {
         this.balance = balance;
     }
+
+    public void deposit(double amount){
+        if(amount < 0){
+            System.out.println("Invalid number");
+            return;
+        }
+
+        System.out.println("Depositing $"+amount+" to "+accountNumber);
+        setBalance(balance+amount);
+    }
+
+    public void withDraw(double amount){
+        if(amount > balance){
+            System.out.println("Not enough balance");
+            return;
+        }
+
+        System.out.println("Withdrawing $"+amount+" from "+accountNumber);
+        setBalance( balance - amount );
+    }
+
+    public void availableBalance(){
+        System.out.println("Available Balance of "+ getAccountNumber() +" is: $"+getBalance());
+    }
+
+
 
 }
 
