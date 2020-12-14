@@ -1,6 +1,7 @@
 package day41_Encapsulation;
 
 public class Item {
+
     public String name;
     public int quantity;
     public double unitPrice;
@@ -23,6 +24,7 @@ public class Item {
                 ", total price= $" + calcCost()+
                 '}';
     }
+
 
 }
 
