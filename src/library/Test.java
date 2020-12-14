@@ -13,6 +13,10 @@ public class Test {
 
       //  Data obj1 = new Data();
 
+        publicMethod();
+      //  privateMethod();
+      //  defaultMethod();
+
 
     }
 
