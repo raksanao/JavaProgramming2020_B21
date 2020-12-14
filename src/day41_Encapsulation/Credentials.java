@@ -15,6 +15,12 @@ public class Credentials {
     }
 
     public void setUserName(String userName) {
+        /*
+        if(userName.length() < 8){
+            return;
+        }
+                we can also do security check in setter of Encapsulation
+         */
         this.userName = userName;
     }
 
