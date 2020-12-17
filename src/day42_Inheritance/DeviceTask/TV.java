@@ -2,6 +2,10 @@ package day42_Inheritance.DeviceTask;
 
 public class TV extends Device {
 
+    public TV(String brand, String model, double price){
+        setInfo("TV", brand, model, price);
+    }
+
     public static boolean hasChannel, hasCabel;
 
     static{
