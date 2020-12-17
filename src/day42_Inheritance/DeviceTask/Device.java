@@ -2,7 +2,7 @@ package day42_Inheritance.DeviceTask;
 
 public class Device {
 
-    public String brand, model;
+    public String deviceName, brand, model;
     public double price;
 
     public static String madeIn;
@@ -15,12 +15,21 @@ public class Device {
        hasPowerButton = true;
     }
 
-    public void setInfo(String brand, String model, double price) {
+    public void setInfo(String deviceName, String brand, String model, double price) {
         this.brand = brand;
         this.model = model;
         this.price = price;
+        this.deviceName = deviceName;
     }
 
+    @Override
+    public String toString() {
+        return "Device{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", price=" + price +
+                '}';
+    }
 
 }
 
