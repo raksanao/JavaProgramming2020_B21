@@ -14,5 +14,15 @@ public class Tiger extends Animal {
         System.out.println(name+" is roaring");
     }
 
-
+    @Override
+    public String toString() {
+        return "Tiger{" +
+                "breed='" + breed + '\'' +
+                ", color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                ", size='" + size + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
+    }
 }

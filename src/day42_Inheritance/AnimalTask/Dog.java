@@ -11,7 +11,17 @@ public class Dog extends Animal {
         System.out.println(name+" is barking");
     }
 
-
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "breed='" + breed + '\'' +
+                ", color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                ", size='" + size + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
+    }
 }
 
 
