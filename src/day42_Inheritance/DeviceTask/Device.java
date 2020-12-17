@@ -25,12 +25,12 @@ public class Device {
     @Override
     public String toString() {
         return "Device{" +
-                "brand='" + brand + '\'' +
+                "deviceName='" + deviceName + '\'' +
+                ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", price=" + price +
                 '}';
     }
-
 }
 
 /*
