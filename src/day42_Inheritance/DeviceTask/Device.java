@@ -31,6 +31,15 @@ public class Device {
                 ", price=" + price +
                 '}';
     }
+
+    public void turnOn(){
+        System.out.println("Turning on "+brand+" "+model);
+    }
+
+    public void turnOff(){
+        System.out.println("Turning Off "+brand+" "+model);
+    }
+
 }
 
 /*
