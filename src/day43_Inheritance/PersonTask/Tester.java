@@ -15,7 +15,6 @@ inherited:
         System.out.println(jobTitle+" "+name+" is testing");
     }
 
-
 }
 
 /*
