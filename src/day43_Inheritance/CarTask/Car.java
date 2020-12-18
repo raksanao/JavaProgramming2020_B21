@@ -32,7 +32,7 @@ public class Car {
     }
 
     public String toString(){
-        return year+" "+brand+" "+model+" "+color+", "+miles
+        return year+" "+brand+" "+model+" "+color+", "+miles+" miles, $"+price;
     }
 
 
