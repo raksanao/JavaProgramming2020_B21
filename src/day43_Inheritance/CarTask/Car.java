@@ -1,6 +1,7 @@
 package day43_Inheritance.CarTask;
 
 public class Car {
+
     public String brand, model, color, madeIn;
     public int year, miles;
     public double  price;
