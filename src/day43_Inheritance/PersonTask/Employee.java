@@ -24,6 +24,7 @@ public class Employee extends Person {  // Employee IS A Person
         return hourlyRate * 40 * 52 ;
     }
 
+
     @Override
     public String toString() {
         return "Employee{" +
