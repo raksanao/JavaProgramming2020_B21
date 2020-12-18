@@ -42,7 +42,7 @@ public class Restaurant {
         this.chefs.addAll( Arrays.asList( chefs ));
     }
 
-    public void terminateEmployee(String ID){
+    public void terminateEmployee(String ID){  // if only the ID is unique for each employee
         servers.removeIf( p  -> p.ID.equals(ID) );
         chefs.removeIf( p  -> p.ID.equals(ID)  );
     }
