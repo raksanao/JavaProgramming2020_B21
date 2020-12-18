@@ -28,12 +28,13 @@ public class Employee extends Person {  // Employee IS A Person
     @Override
     public String toString() {
         return "Employee{" +
-                ", name= '" + name + '\'' +
+                "name= '" + name + '\'' +
                 ", age=" + age +
                 ", jobTitle= '" + jobTitle + '\'' +
-                "hourlyRate= $" + hourlyRate +
+                ", hourlyRate= $" + hourlyRate +
                 ", ID=' " + ID + '\'' +
                 ", gender= " + gender +
+                ", salary= $" + (int)calcSalary() +
                 '}';
     }
 
