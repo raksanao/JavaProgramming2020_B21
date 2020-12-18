@@ -20,6 +20,17 @@ public class Employee extends Person {  // Employee IS A Person
         this.jobTitle = jobTitle;
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                ", name= '" + name + '\'' +
+                ", age=" + age +
+                ", jobTitle= '" + jobTitle + '\'' +
+                "hourlyRate= $" + hourlyRate +
+                ", ID=' " + ID + '\'' +
+                ", gender= " + gender +
+                '}';
+    }
 
 
 }
