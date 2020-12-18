@@ -6,6 +6,7 @@ public class Person {
     public int age;
     public char gender;
 
+
     public void setInfo(String name, int age, char gender) {
         this.name = name;
         this.age = age;
