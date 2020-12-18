@@ -21,7 +21,7 @@ public class Test extends AccessModifiers {
         // visibility test in inheritance:
         Test.publicMethod();
         Test.protectedMethod();
-        Test.defaultMethod();
+     //   Test.defaultMethod();
 
 
 
