@@ -18,18 +18,20 @@ public class Shape {
         return 0;
     }
 
+
     public double calcPerimeter(){
         return 0;
     }
 
-    @Override
+
     public String toString() {
         return "Shape{" +
                 "name= '" + name + '\'' +
-                "Area= '" + calcArea() + '\'' +
-                "Perimeter= '" + calcPerimeter() + '\'' +
+                ", Area= '" + calcArea() + '\'' +
+                ", Perimeter= '" + calcPerimeter() + '\'' +
                 '}';
     }
+
 
 
 }

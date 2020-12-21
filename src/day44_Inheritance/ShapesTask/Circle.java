@@ -20,5 +20,21 @@ public class Circle extends Shape {
     }
 
 
+    public double calcArea(){
+        return radius * radius * PI;
+    }
 
 }
+
+class Test{
+
+    public static void main(String[] args) {
+
+
+    }
+
+
+}
+
+
+
