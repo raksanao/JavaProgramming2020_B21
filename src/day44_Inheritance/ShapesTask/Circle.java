@@ -24,17 +24,14 @@ public class Circle extends Shape {
         return radius * radius * PI;
     }
 
-}
-
-class Test{
-
-    public static void main(String[] args) {
-
-
+    public double calcPerimeter(){
+        return diameter * PI ;
     }
 
 
+
 }
+
 
 
 

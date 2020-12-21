@@ -1,6 +1,7 @@
 package day44_Inheritance.ShapesTask;
 
 public class Rectangle extends Shape{
+
      /*
     variables: 4 ( 1 ins, 3 sta)
     methods: 4 (4 ins)
@@ -12,6 +13,16 @@ public class Rectangle extends Shape{
         this.width = width;
         this.length = length;
         setInfo("Rectangle");
+    }
+
+    @Override
+    public  double calcArea(){
+        return width * length;
+    }
+
+    @Override
+    public double calcPerimeter() {
+        return (width+length)*2;
     }
 
 

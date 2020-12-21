@@ -13,6 +13,14 @@ public class Square extends Shape {
         setInfo("Square");
     }
 
+    @Override
+    public double calcArea() {
+        return side * side;
+    }
 
+    @Override
+    public double calcPerimeter() {
+        return side * 4;
+    }
 
 }
