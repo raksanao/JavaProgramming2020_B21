@@ -4,7 +4,7 @@ public class Shape {
     public String name;
     public final static boolean isShape, hasArea, hasPerimeter; // constant
 
-    public void setInfo(String name){
+    public Shape(String name){
         this.name=name;
     }
 

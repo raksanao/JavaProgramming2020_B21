@@ -5,8 +5,9 @@ public class Cube extends Shape{
     public double side;
 
     public Cube(double side) {
+        super("Cube");
         this.side = side;
-        setInfo("Cube");
+
     }
 
     @Override
@@ -20,4 +21,5 @@ public class Cube extends Shape{
     public double calcPerimeter() {
         return side * 12;
     }
+
 }
