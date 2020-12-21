@@ -8,7 +8,7 @@ public class ChromeDriver extends WebDriver {
 
     @Override
     public void get(String URL) {
-        System.out.println("opening the chrome driver");
+        System.out.println("opening "+URL+" the chrome driver");
     }
 
     @Override
