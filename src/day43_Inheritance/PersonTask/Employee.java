@@ -1,11 +1,13 @@
 package day43_Inheritance.PersonTask;
 
 public class Employee extends Person {  // Employee IS A Person
+
     /*
     inherited:
         variables: name, age, gender
         methods: setInfo, eat, sleep, toString
      */
+
     public double hourlyRate;
     public String jobTitle, ID;
 
