@@ -17,6 +17,10 @@ public class RemoteDriver {
         System.out.println("closing the Remote driver ");
     }
 
+    public void maximize(){
+        System.out.println("Maximizing the Remote driver");
+    }
+
     @Override
     public String toString() {
         return "RemoteDriver{" +
