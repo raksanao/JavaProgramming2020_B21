@@ -10,7 +10,7 @@ public class WebDriver {
     }
 
     public void get(String URL){
-        System.out.println("opening the Remote driver");
+        System.out.println("opening "+URL+" from the Remote driver");
     }
 
     public void close(){
