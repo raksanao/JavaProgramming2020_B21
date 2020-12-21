@@ -20,4 +20,5 @@ public class Triangle  extends Shape{
     public double calcPerimeter() {
         return base + side * 2;
     }
+
 }
