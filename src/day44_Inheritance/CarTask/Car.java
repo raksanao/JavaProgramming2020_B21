@@ -21,11 +21,11 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", color='" + color + '\'' +
-                ", price=" + price +
-                ", year=" + year +
+                "brand= '" + brand + '\'' +
+                ", model= '" + model + '\'' +
+                ", color= '" + color + '\'' +
+                ", price= $" + price +
+                ", year= " + year +
                 '}';
     }
 
