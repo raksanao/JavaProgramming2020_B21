@@ -1,6 +1,6 @@
 package day44_Inheritance.ShapesTask;
 
-public class Rectangle extends Shape{
+public final class Rectangle extends Shape{
 
      /*
     variables: 4 ( 1 ins, 3 sta)

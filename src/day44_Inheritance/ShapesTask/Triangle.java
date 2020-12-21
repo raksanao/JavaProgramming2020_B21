@@ -1,6 +1,6 @@
 package day44_Inheritance.ShapesTask;
 
-public class Triangle  extends Shape{
+public final class Triangle  extends Shape{
 
     public double height, base, side;
 

@@ -1,6 +1,6 @@
 package day44_Inheritance.ShapesTask;
 
-public class Square extends Shape {
+public final class Square extends Shape {
 
    /*
     variables: 4 ( 1 ins, 3 sta)

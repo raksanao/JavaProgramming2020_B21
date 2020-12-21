@@ -1,6 +1,6 @@
 package day44_Inheritance.ShapesTask;
 
-public class Cube extends Shape{
+public final class Cube extends Shape{
 
     public double side;
 
