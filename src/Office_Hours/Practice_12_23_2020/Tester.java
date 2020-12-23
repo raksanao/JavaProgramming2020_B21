@@ -12,5 +12,9 @@ public class Tester extends Employee {
         super(name, jobTitle, ID, gender, salary, isFullTime);
     }
 
+    public void foundBug(){
+        System.out.println(jobTitle+" "+name+" found a bug");
+    }
+
 
 }
