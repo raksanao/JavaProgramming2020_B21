@@ -21,9 +21,36 @@ public class FaceBook {
         };
 
 
+
+
         ScrumTeam scrumTeam = new ScrumTeam(PO, SM, BA);
+        System.out.println(scrumTeam);
+
+        scrumTeam.addTester(tester);
+        scrumTeam.addDeveloper(developer);
 
         System.out.println(scrumTeam);
+
+        scrumTeam.addDeveloper(developers);
+        scrumTeam.addTester(testers);
+
+        System.out.println(scrumTeam);
+
+      //  scrumTeam.removeTester("B02");
+      //  scrumTeam.removeDeveloper("C02");
+     //   System.out.println(scrumTeam);
+
+        System.out.println("===================================================================");
+
+        for(Developer each : scrumTeam.developers){
+            System.out.println(each.name +" : "+each.salary);
+        }
+
+        System.out.println("=============================================================");
+
+        System.out.println( scrumTeam.getProductOwner()  );
+        System.out.println( scrumTeam.getBusinessAnalyst());
+        System.out.println(scrumTeam.getScrumMaster());
 
     }
 }
