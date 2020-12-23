@@ -12,9 +12,17 @@ public class ScrumTeam {
     public ArrayList<Tester> testers = new ArrayList<>();
     public ArrayList<Developer> developers = new ArrayList<>();
 
-    public ScrumTeam(ProductOwner productOwner, ScrumMaster scrumMaster, BusinessAnalyst businessAnalyst){
+    public ScrumTeam(ProductOwner productOwner) {
         setProductOwner(productOwner);
-        setScrumMaster(scrumMaster);
+    }
+
+    public ScrumTeam(ProductOwner productOwner, ScrumMaster scrumMaster) {
+       this(productOwner);
+       setScrumMaster(scrumMaster);
+    }
+
+    public ScrumTeam(ProductOwner productOwner, ScrumMaster scrumMaster, BusinessAnalyst businessAnalyst){
+        this(productOwner, scrumMaster);
         setBusinessAnalyst(businessAnalyst);
     }
 
