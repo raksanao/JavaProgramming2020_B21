@@ -32,6 +32,16 @@ public class ScrumTeam {
       //  for(Tester each : testers ) addTester(each);
     }
 
+    public void addDeveloper(Developer[] developers){
+
+       // for( Developer each: developers) addDeveloper(each);
+        this.developers.addAll( Arrays.asList(developers) );
+
+    }
+
+    public void
+
+
 
 
 
