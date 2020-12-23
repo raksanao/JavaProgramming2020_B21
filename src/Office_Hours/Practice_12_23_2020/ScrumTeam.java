@@ -39,11 +39,13 @@ public class ScrumTeam {
 
     }
 
-    public void
+    public void removeTester(String ID){
+        testers.removeIf( p ->  p.ID.equals(ID) );
+    }
 
-
-
-
+    public void removeDeveloper(String ID){
+        developers.removeIf( p -> p.ID.equals(ID));
+    }
 
     public ProductOwner getProductOwner(){
         return productOwner;
@@ -67,6 +69,17 @@ public class ScrumTeam {
 
     public void setBusinessAnalyst(BusinessAnalyst businessAnalyst) {
         this.businessAnalyst = businessAnalyst;
+    }
+
+    @Override
+    public String toString() {
+        return "ScrumTeam{" +
+                "productOwner= " + productOwner.name +
+                ", scrumMaster= " + scrumMaster.name +
+                ", businessAnalyst= " + businessAnalyst.name +
+                ", testers= " + testers.size() +
+                ", developers=" + developers.size() +
+                '}';
     }
 
 
