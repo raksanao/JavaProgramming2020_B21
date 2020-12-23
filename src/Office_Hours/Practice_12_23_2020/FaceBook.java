@@ -7,7 +7,19 @@ public class FaceBook {
         BusinessAnalyst BA = new BusinessAnalyst("Ayse", "A02", 'F', 150000, true);
         ScrumMaster SM = new ScrumMaster("Yalcin", "A03", 'M', 135000, true);
 
-        Tester tester1 = new Tester("Sayyohat")
+        Tester tester = new Tester("Sayyohat", "QE","B01", 'F', 115000, false);
+        Tester[] testers = {
+                new Tester("Elvira", "QA", "B02", 'F', 115001, true),
+                new Tester("Ekaterina", "SDET", "B03", 'F', 115002, false)
+        };
+
+        Developer developer = new Developer("Afrooz", "Java Developer", "C01", 'F', 120000, true);
+
+        Developer[] developers = {
+             new Developer("Erjon", "Software Developer", "C02", 'M', 120000, false),
+             new Developer("Necdet", "Senior Developer", "C03", 'M', 120001, true)  ,
+        };
+
 
         ScrumTeam scrumTeam = new ScrumTeam(PO, SM, BA);
 
