@@ -82,11 +82,11 @@ public class ScrumTeam {
     @Override
     public String toString() {
         return "ScrumTeam{" +
-                "productOwner= " + productOwner.name +
-                ", scrumMaster= " + scrumMaster.name +
-                ", businessAnalyst= " + businessAnalyst.name +
+                "Product Owner= " + productOwner.name +
+                ", Scrum Master= " + scrumMaster.name +
+                ", Business Analyst= " + businessAnalyst.name +
                 ", testers= " + testers.size() +
-                ", developers=" + developers.size() +
+                ", developers= " + developers.size() +
                 '}';
     }
 
